@@ -1,0 +1,43 @@
+! urxvt dot
+URxvt.font:xft:Terminus:size=12:autohint=false:antialias=true:hinting=true:style=regular
+!urxvt.font xft:terminus:size=12
+!urxvt.boldFont xft: lode:pixelsize=10:antialias=true:hinting=true
+urxvt.scrollBar: false
+urxvt.url-select.launcher : firefox
+urxvt.geometry: 77x19
+
+! each theme
+urxvt*background: #1c1c20
+urxvt*foreground: #00FF00
+urxvt*internalBorder: 20
+urxvt*cursorBlink: 1
+
+! color
+urxvt*cursorColor: #ecf0f1
+urxvt*color0:   #3e464e
+urxvt*color8:   #3e464e
+urxvt*color1:	#db0a5b
+urxvt*color9:	#db0a5b
+urxvt*color2:	#00FF00
+urxvt*color10:	#00FF00
+urxvt*color3:	#f2784b
+urxvt*color11:	#f2784b
+urxvt*color4:	#22a7f0
+urxvt*color12:	#22a7f0
+urxvt*color5:	#f64747
+urxvt*color13:	#f64747
+urxvt*color6:	#55aeae
+urxvt*color14:	#55aeae
+urxvt*color7:	#ecf0f1
+urxvt*color15:	#ecf0f1
+
+! Rofi
+rofi.opacity:  90
+rofi.width:    30
+rofi.lines: 5
+rofi.color-enabled: true
+rofi.color-window: #273238, #273238, #1e2529
+rofi.color-normal: #273238, #c1c1c1, #273238, #394249, #ffffff
+rofi.color-active: #273238, #80cbc4, #273238, #394249, #80cbc4
+rofi.color-urgent: #273238, #ff1844, #273238, #394249, #ff1844
+
