@@ -1,4 +1,4 @@
-export ZSH=/home/crime/.oh-my-zsh
+export ZSH=/home/yung/.oh-my-zsh
 ZSH_THEME="kardan"
 plugins=(git)
 
