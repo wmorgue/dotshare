@@ -1,2 +1,2 @@
 ## Dot share
-![alt text](https://imgur.com/a/EQo6s)
+[! Зарисовка] http://i.imgur.com/mZRRBGJ.png
