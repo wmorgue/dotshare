@@ -29,8 +29,8 @@ new_window pixel 3
 new_float pixel 3
 floating_modifier Mod1
 focus_follows_mouse no
-#Exec urxvt
-bindsym Mod4+Return exec --no-startup-id urxvt
+#Exec Xterm
+bindsym Mod4+Return exec --no-startup-id xterm
 
 # Sound
 bindsym F3 exec amixer set Master 5%- unmute
