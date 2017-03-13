@@ -1,17 +1,19 @@
-URxvt.perl-ext-common:fullscreen
-URxvt.keysym.F11: perl:fullscreen:switch
+!Xterm
+xterm*VT100.geometry: 69x19
+xterm*faceName: Terminus:size=13:antialias=false
+
 
 ! urxvt dot
 urxvt.font:xft:Terminus:size=13:autohint=false:hinting=true:style=regular
-! urxvt.boldFont:    xft:lode:size=12:antialias=true:hinting=true:style=regular
 urxvt.scrollBar: false
 urxvt.url-select.launcher : firefox
 urxvt.geometry: 71x19
+urxvt.perl-ext-common:fullscreen
+urxvt.keysym.F11: perl:fullscreen:switch
 
 ! Other ----
 urxvt.depth: 32
 urxvt.loginShell: true
-
 
 ! each theme
 urxvt*background: #212121
@@ -19,11 +21,7 @@ urxvt*foreground: #43e8d8
 urxvt*internalBorder: 20
 urxvt*cursorBlink: 1
 
-! colorc
-urxvt*cursorColor: #43e8d8
-
 ! Common
-
 #define S_yellow        #b58900
 #define S_orange        #cb4b16
 #define S_red           #dc322f
