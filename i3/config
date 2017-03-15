@@ -6,13 +6,13 @@
 ### THEME ###
 #############
 
-font pango: DejavuSansMono 10
+font pango: lode 10
 set $FOCUS #deded6
 set $UNFOCUS #2b3135
 
 # Gaps
-set $default_gaps_inner 10
-set $default_gaps_outer 10
+set $default_gaps_inner 3
+set $default_gaps_outer 3
 gaps inner $default_gaps_inner
 gaps outer $default_gaps_outer
 
@@ -25,11 +25,11 @@ client.placeholder      #212121 #0C0C0C #FFFFFF #212121
 client.background       #212121
 
 # Borders
-new_window pixel 3
-new_float pixel 3
+new_window pixel 2
+new_float pixel 2
 floating_modifier Mod1
 focus_follows_mouse no
-#Exec Xterm
+#Exec urxvt
 bindsym Mod4+Return exec --no-startup-id xterm
 
 # Sound
@@ -48,6 +48,136 @@ bindsym --release Print exec scrot
 
 # Change focus
 bindsym Mod1+$left focus left
+bindsym Mod1+$down focus down
+bindsym Mod1+$up focus up
+bindsym Mod1+$right focus right
+
+# alternatively, you can use the cursor keys:
+bindsym Mod1+Left focus left
+bindsym Mod1+Down focus down
+bindsym Mod1+Up focus up
+bindsym Mod1+Right focus right
+
+# Move focused window
+bindsym Mod1+Shift+$left move left
+bindsym Mod1+Shift+$down move down
+bindsym Mod1+Shift+$up move up
+bindsym Mod1+Shift+$right move right
+
+# alternatively, you can use the cursor keys:
+bindsym Mod1+Shift+Left move left
+bindsym Mod1+Shift+Down move down
+bindsym Mod1+Shift+Up move up
+bindsym Mod1+Shift+Right move right
+
+# Split in horizontal orientation
+bindsym Mod1+h split h
+
+# Split in vertical orientation
+bindsym Mod1+v split v
+
+# Enter fullscreen mode for the focused container
+bindsym Mod1+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym Mod1+s layout stacking
+bindsym Mod1+w layout tabbed
+bindsym Mod1+e layout toggle split
+
+# Toggle tiling / floating
+bindsym Mod1+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym Mod1+space focus mode_toggle
+
+# focus the parent container
+bindsym Mod1+a focus parent
+
+# focus the child container
+#bindsym Mod1+d focus child
+
+# move the currently focused window to the scratchpad
+bindsym Mod1+Shift+minus move scratchpad
+
+# Show the next scratchpad window or hide the focused scratchpad window.
+bindsym Mod1+minus scratchpad show
+
+# Workspace
+bindsym Mod1+1 workspace 
+bindsym Mod1+2 workspace 
+bindsym Mod1+3 workspace 
+bindsym Mod1+4 workspace 
+bindsym Mod1+5 workspace 
+# 
+# 
+# 
+# move focused container to workspace
+bindsym Mod1+Shift+1 move container to workspace 
+
+bindsym Mod1+Shift+3 move container to workspace 
+
+bindsym Mod1+Shift+2 move container to workspace 
+bindsym Mod1+Shift+4 move container to workspace 
+bindsym Mod1+Shift+5 move container to workspace 
+
+# Restart/Reload i3wm
+bindsym Mod1+Shift+r restart
+bindsym Mod1+Shift+c reload
+
+# exit i3 (logs you out of your X session)
+bindsym Mod1+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# Resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym $left       resize shrink width 10 px or 10 ppt
+        bindsym $down       resize grow height 10 px or 10 ppt
+        bindsym $up         resize shrink height 10 px or 10 ppt
+        bindsym $right      resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left        resize shrink width 10 px or 10 ppt
+        bindsym Down        resize grow height 10 px or 10 ppt
+        bindsym Up          resize shrink height 10 px or 10 ppt
+        bindsym Right       resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym Mod1+r mode "resize"
+
+################
+### i3status ###
+################
+
+bar {
+        status_command i3status --config ~/.config/i3/i3status.conf
+
+        position top
+        font pango: ttf-font-awesome 8
+        colors {
+
+            background  #333333
+            statusline  #DDDDDD
+	    separator   #666666
+            focused_workspace   #5bc0de #5bc0de #FFFFFF
+            active_workspace    #212121 #212121 #FFFFFF
+            inactive_workspace  #212121 #212121 #888888
+            urgent_workspace    #2F343A #D64E4E #FFFFFF
+        }
+}
+exec --no-startup-id setxkbmap "us,ru" "grp:shift_toggle"
+exec_always nitrogen --restore
+exec_always synclient TouchpadOff=0
+
+
 bindsym Mod1+$down focus down
 bindsym Mod1+$up focus up
 bindsym Mod1+$right focus right
