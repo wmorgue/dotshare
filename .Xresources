@@ -1,97 +1,98 @@
-!Xterm
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!! 		 URXVT MAIN  	    !!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!URxvt.perl-ext-common:fullscreen
+!URxvt.keysym.F11: perl:fullscreen:switch
+! urxvt dot
+!urxvt.font:xft:Terminus:size=13:autohint=false:hinting=true:style=regular
+!urxvt.scrollBar: false
+!urxvt.url-select.launcher : firefox
+!urxvt.geometry: 71x19
+! Other ----
+!urxvt.depth: 32
+!urxvt.loginShell: true
+! each theme
+!urxvt*background: #212121
+!urxvt*foreground: #43e8d8
+!urxvt*internalBorder: 20
+!urxvt*cursorBlink: 1
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!		XTERM MAIN		!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 xterm*VT100.geometry: 69x19
 xterm*faceName: Terminus:size=13:antialias=false
+! Background: black, dark grey
+#define _background #272822
+#define _color8 #303030
 
+! Color1/foreground: light grey: standard files, cursor
+! Color9: bright pink: soft link e.g. ln -s test1 imaginarytest
+#define _foreground #d0d0d0
+#define _color9 #ff0090
 
-! urxvt dot
-urxvt.font:xft:Terminus:size=13:autohint=false:hinting=true:style=regular
-urxvt.scrollBar: false
-urxvt.url-select.launcher : firefox
-urxvt.geometry: 71x19
-urxvt.perl-ext-common:fullscreen
-urxvt.keysym.F11: perl:fullscreen:switch
+! Color2: dark green: world read/write dir e.g. /tmp
+! Color10: bright green: binaries user can execute /bin
+#define _color2 #66AA11
+#define _color10 #80FF00
 
-! Other ----
-urxvt.depth: 32
-urxvt.loginShell: true
+! Color3: medium brown: fifo e.g mkfifo fifotest
+! Color11: light brown/sand: block special files e.g ls -l /dev/loop0
+#define _color3 #c47f2c
+#define _color11 #ffba68
 
-! each theme
-urxvt*background: #212121
-urxvt*foreground: #43e8d8
-urxvt*internalBorder: 20
-urxvt*cursorBlink: 1
+! Color4: medium blue: FIXME: unused?
+! Color12: light blue: directory
+#define _color4 #30309b
+#define _color12 #5f5fee
 
-! Common
-#define S_yellow        #b58900
-#define S_orange        #cb4b16
-#define S_red           #dc322f
-#define S_magenta       #d33682
-#define S_violet        #6c71c4
-#define S_blue          #268bd2
-#define S_cyan          #2aa198
-#define S_green         #859900
+! Color5: dark purple: Not used in ls, in ranger (not sure where it gets it colors from though)
+! Color13: light purple: socket file /var/run/dbus_system_bus_socket
+#define _color5 #7e40a5
+#define _color13 #bb88dd
 
+! Color6: medium magenta: FIXME: unused?
+! Color14: light magenta: symbolic links e.g. ~/Examples /bin/lsmod
+#define _color6 #3579A8
+#define _color14 #4eb4fa
 
-! Dark
+! Color7: medium grey: setuid file e.g. /usr/bin/sudo
+! Color15: light grey: background color for setuid files e.g /usr/bin/sudo
+#define _color7 #9999AA
+! Trying white in case it helps
+#define _color15 #ffffff
+!#define _color15 #d0d0d0
 
-#define S_base03        #002b36
-#define S_base02        #073642
-#define S_base01        #586e75
-#define S_base00        #657b83
-#define S_base0         #839496
-#define S_base1         #93a1a1
-#define S_base2         #eee8d5
-#define S_base3         #fdf6e3
+! General - covering all X clients
+!*background: _background
+!*foreground: _foreground
+! Not sure what this one does - Solarise had it at base3
+!*fadeColor: XXX ! Not sure what this does
 
+! XTerm specific
+xterm*background: _background
+xterm*foreground: _foreground
 
-! Light
+! Not really required - XTerm defaults to using the foreground colour
+xterm*cursorColor: _foreground
 
-! #define S_base03        #fdf6e3
-! #define S_base02        #eee8d5
-! #define S_base01        #93a1a1
-! #define S_base00        #839496
-! #define S_base0         #657b83
-! #define S_base1         #586e75
-! #define S_base2         #073642
-! #define S_base3         #002b36
-
-
-! To only apply colors to your terminal, for example, prefix
-! the color assignment statement with its name. Example:
-!
-! URxvt*background:            S_base03
-
-*background:              S_base03
-*foreground:              S_base0
-*fading:                  40
-*fadeColor:               S_base03
-*cursorColor:             S_base1
-*pointerColorBackground:  S_base01
-*pointerColorForeground:  S_base1
-
-*color0:                  S_base02
-*color1:                  S_red
-*color2:                  S_green
-*color3:                  S_yellow
-*color4:                  S_blue
-*color5:                  S_magenta
-*color6:                  S_cyan
-*color7:                  S_base2
-*color9:                  S_orange
-*color8:                  S_base03
-*color10:                 S_base01
-*color11:                 S_base00
-*color12:                 S_base0
-*color13:                 S_violet
-*color14:                 S_base1
-*color15: 		  S_base3
-
-
-
-! special
-*.foreground: #efefef
-*.background: #232323
-!*.cursorColor: #efefef
+xterm*color0: _background
+xterm*color1: _foreground
+xterm*color2: _color2
+xterm*color3: _color3
+xterm*color4: _color4
+xterm*color5: _color5
+xterm*color6: _color6
+xterm*color7: _color7
+! 8-15 are considered brighter colours of 1-7
+xterm*color8: _color8
+xterm*color9: _color9
+xterm*color10: _color10
+xterm*color11: _color11
+xterm*color12: _color12
+xterm*color13: _color13
+xterm*color14: _color14
+xterm*color15: _color15
 
 ! Rofi
 rofi.opacity:  65
