@@ -3,9 +3,9 @@ syntax on
 filetype on 
 set nocompatible              " be iMproved, required
 set laststatus=2
-let g:airline_powerline_fonts=1
+colorscheme molokai
 let g:molokai_original = 1
-let g:rehash256 = 1
+let g:airline_powerline_fonts=1
 
 " set the runtime path to include Vundle and initialize
 
