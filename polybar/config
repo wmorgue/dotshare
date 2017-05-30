@@ -15,7 +15,7 @@ colour_3	= #CC6666
 monitor = ${env:MONITOR:LVDS1}
 top = true
 width = 100%
-height = 25
+height = 22
 offset-x = 0
 offset-y = 0
 radius = 0.0
@@ -32,19 +32,19 @@ padding-right = 3
 module-margin-left = 2
 module-margin-right = 2
 
-font-0 = Terminus:size=9;1
-font-1 = MaterialIcons:size=9;0
-font-2 = FontAwesome:fontformat=truetype:size=9;1
+font-0 = Terminus:size=10;1
+font-1 = MaterialIcons:size=10;2
+font-2 = FontAwesome:fontformat=truetype:size=10;1
 
 modules-left = i3 xwindow
 modules-center = date
 modules-right = volume battery wireless-network powermenu
 
 tray-position = right
-tray-padding = 5
+tray-padding = 10
 tray-offset-y = 0%
 tray-offset-x = 0%
-tray-maxsize = 18
+tray-maxsize = 14
 tray-detached = true
 tray-transparent = false
 tray-color = #1D1F21
@@ -110,7 +110,7 @@ label-muted = 
 bar-volume-width = 15
 bar-volume-foreground = ${colors.foreground}
 bar-volume-gradient = false
-bar-volume-indicator= 
+bar-volume-indicator= |
 bar-volume-indicator-font = 1
 bar-volume-fill = ─
 bar-volume-fill-font = 1
@@ -121,10 +121,10 @@ bar-volume-empty-foreground = ${colors.colour_2}
 [module/powermenu]
 type = custom/menu
 
-format-padding = 5
+format-padding = -1
 ;format-spacing = 1
 
-abel-open = 
+label-open = 
 label-close = 
 
 menu-0-0 = Terminate WM
@@ -157,7 +157,7 @@ margin-bottom = 5
 
 [module/battery]
 type = internal/battery
-full-at = 100
+full-at = 57
 
 battery = BAT1
 adapter = ACAD
@@ -204,9 +204,15 @@ label-disconnected-foreground = Disconnected
 monitor = LVDS1
 bottom = true
 width = 100%
-height = 27
+height = 25
+
+offset-x = 0
+offset-y = 0
+radius = 0.0
+fixed-center = true
 
 padding-left = 3
+;padding-right = 3
 
 background = ${bar/top.background}
 foreground = ${bar/top.foreground}
@@ -280,16 +286,16 @@ type = internal/xkeyboard
 blacklist-0 = num lock
 
 format-prefix = " "
-format-prefix-foreground = ${bar/top.colour_2}
-format-prefix-underline = ${bar/top/colour_3}
+format-prefix-foreground = ${colors.colour_2}
+;format-prefix-underline = ${colors.colour_2}
 
 label-layout = %layout%
-label-layout-underline = ${bar/top.colour_2}
+label-layout-underline = ${colors.colour_2}
 
 label-indicator-padding = 2
 label-indicator-margin = 1
-label-indicator-background = ${bar/top.colour_2
-label-indicator-underline = ${bar/top.colour_2}
+;label-indicator-background = ${bar/top.colour_2
+;label-indicator-underline = ${bar/top.colour_2}
 
 
 [module/temperature]
