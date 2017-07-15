@@ -7,8 +7,8 @@
 #############
 
 #font pango: lode 10
-font: dina 10
-set $FOCUS #deded6
+font: Fira Code 10
+set $FOCUS #f0f8ff
 set $UNFOCUS #2b3135
 
 # Gaps
@@ -17,7 +17,7 @@ set $default_gaps_outer 3
 gaps inner $default_gaps_inner
 gaps outer $default_gaps_outer
 
-client.focused            #383838 #0e0d0e #BBBBBB #4F4F4F #0e0d0e
+client.focused            #f0f8ff #0e0d0e #BBBBBB #4F4F4F #00ff2b
 client.focused_inactive   #1A1A1A #0d010d #424242 #121212 #0d010d
 client.unfocused          #030706 #0d010d #4F4F4F #4F4F4F #0d010d
 client.urgent             #1A1A1A #0d010d #a5a5a5 #1A1A1A #0d010d
@@ -128,7 +128,7 @@ bindsym Mod1+Shift+r restart
 bindsym Mod1+Shift+c reload
 
 # exit i3 (logs you out of your X session)
-bindsym Mod1+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym Mod1+Shift+e exec "i3-nagbar -t warning -m 'Exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # Resize window (you can also use the mouse for that)
 mode "resize" {
@@ -160,22 +160,25 @@ bindsym Mod1+r mode "resize"
 ### i3status ###
 ################
 
-bar {
-        status_command i3status --config ~/.config/i3/i3status.conf
+#bar {
+#	status_command polybar --config ~/.config/polybar/config	
 
-        position top
-        font pango:dina 10
-        colors {
+ #       position top
+  #      font:FontAwesome 12
+   #     colors {
+#
+ #           background  #0a1117
+  #          statusline  #DDDDDD
+#	          separator   #000000
+ #           focused_workspace   #333333 #333333 #FFFFFF
+  #          active_workspace    #212121 #212121 #FFFFFF
+   #         inactive_workspace  #212121 #212121 #888888
+    #        urgent_workspace    #2F343A #D64E4E #FFFFFF
+#        }
+#}
 
-            background  #999999
-            statusline  #DDDDDD
-	          separator   #000000
-            focused_workspace   #333333 #333333 #FFFFFF
-            active_workspace    #212121 #212121 #FFFFFF
-            inactive_workspace  #212121 #212121 #888888
-            urgent_workspace    #2F343A #D64E4E #FFFFFF
-        }
-}
-exec --no-startup-id setxkbmap "us,ru" "grp:shift_toggle"
-exec_always nitrogen --restore
-exec_always synclient TouchpadOff=0
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id setxkbmap "us, ru" "grp:shift_toggle" rofi
+exec_always --no-startup-id nitrogen --restore
+#exec_always synclient TouchpadOff=0
+
