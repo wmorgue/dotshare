@@ -27,7 +27,7 @@ DISABLE_AUTO_UPDATE="true"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(git python django)
+plugins=(systemd git python django)
 source $ZSH/oh-my-zsh.sh
 
 alias pacs="sudo pacman -S"
@@ -35,5 +35,3 @@ alias pacs-sync="sudo pacman -Syu"
 alias offline="systemctl poweroff"
 alias nmli="nmcli dev wifi"
 
-# Secret key for django
-export s_key='lx2n9+j=saw&7h_g(-pg==-e06*&@&qpc!l!nuc781o091s&hc'
