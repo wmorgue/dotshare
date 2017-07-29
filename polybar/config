@@ -5,9 +5,9 @@ throttle-input-for = 30
 screenchange-reload = false
 
 [colors]
-background 	= #2a2b2d
+background 	= #232f39
 foreground 	= #ffffff
-colour_1	= #707880
+colour_1	= #6DC6E4
 colour_2	= #5F819D
 colour_3	= #CC6666
 

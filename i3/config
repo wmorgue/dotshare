@@ -17,11 +17,11 @@ set $default_gaps_outer 3
 gaps inner $default_gaps_inner
 gaps outer $default_gaps_outer
 
-client.focused            #f0f8ff #0e0d0e #BBBBBB #4F4F4F #00ff2b
+client.focused            #f0f8ff #0e0d0e #BBBBBB #4F4F4F #E1FCFF
 client.focused_inactive   #1A1A1A #0d010d #424242 #121212 #0d010d
 client.unfocused          #030706 #0d010d #4F4F4F #4F4F4F #0d010d
 client.urgent             #1A1A1A #0d010d #a5a5a5 #1A1A1A #0d010d
-client.background         #121212#
+client.background         #121212
 
 # Borders
 new_window pixel 2
