@@ -16,8 +16,9 @@ Django=$HOME/Coding/Django
 export GOPATH=$HOME/Coding/Go
 export GOBIN=$GOPATH/bin
 export GOPHER=$GOPATH/src/GoBook
+export RUSTLANG=$HOME/Coding/Rust
 
-ZSH_THEME="kardan"
+ZSH_THEME="gentoo"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -33,5 +34,5 @@ source $ZSH/oh-my-zsh.sh
 alias pacs="sudo pacman -S"
 alias pacs-sync="sudo pacman -Syu"
 alias offline="systemctl poweroff"
-alias nmli="nmcli dev wifi"
-
+alias dial-up="nmcli dev wifi"
+alias top10='ps -e -o rss,command | awk '"'"'{arr[$2]+=$1}END {for (i in arr) print i"\t"arr[i]/1024"Mb"}'"'"' | sort -k 2 -n -r | head | nl'
