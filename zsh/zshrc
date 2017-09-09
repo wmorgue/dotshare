@@ -1,11 +1,11 @@
 # Mankind was born on earth. it was never meant to die here.
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export SSH_KEY_PATH="~/.ssh/rsa_id"
-export ZSH=/home/crime/.oh-my-zsh
+#export SSH_KEY_PATH="~/.ssh/rsa_id"
+export ZSH=/home/sexy/.oh-my-zsh
 export ARCHFLAGS="-arch x86_64"
 export LANG=en_US.UTF-8
-export EDITOR='vim'
+export EDITOR='nvim'
 export TERM='xterm'
 
 # CUSTOM DIRECTORY PATH #
@@ -13,12 +13,12 @@ Deploy=$HOME/Coding/Deployment
 Django=$HOME/Coding/Django
 
 ######### GO LANG ################
-export GOPATH=$HOME/Coding/Go
-export GOBIN=$GOPATH/bin
-export GOPHER=$GOPATH/src/GoBook
+#export GOPATH=$HOME/Coding/Go
+#export GOBIN=$GOPATH/bin
+#export GOPHER=$GOPATH/src/GoBook
 export RUSTLANG=$HOME/Coding/Rust
 
-ZSH_THEME="gentoo"
+ZSH_THEME="apple"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -31,8 +31,9 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(systemd git python django)
 source $ZSH/oh-my-zsh.sh
 
-alias pacs="sudo pacman -S"
-alias pacs-sync="sudo pacman -Syu"
+alias pacs="sudo -E pacman -S"
+alias pacs-sync="sudo -E pacman -Syu"
 alias offline="systemctl poweroff"
 alias dial-up="nmcli dev wifi"
 alias top10='ps -e -o rss,command | awk '"'"'{arr[$2]+=$1}END {for (i in arr) print i"\t"arr[i]/1024"Mb"}'"'"' | sort -k 2 -n -r | head | nl'
+
