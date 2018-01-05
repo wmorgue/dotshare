@@ -1,13 +1,4 @@
-#   ░▀█▀░▀▀█░░░█▀▀░█▀█░█▀█░█▀▀░▀█▀░█▀▀
-#   ░░█░░░▀▄░░░█░░░█░█░█░█░█▀▀░░█░░█░█
-#   ░▀▀▀░▀▀░░░░▀▀▀░▀▀▀░▀░▀░▀░░░▀▀▀░▀▀▀
-
-#############
-### THEME ###
-#############
-
-#font pango: lode 10
-font: Fira Code 10
+font: Hack 10
 set $FOCUS #f0f8ff
 set $UNFOCUS #2b3135
 
@@ -17,7 +8,7 @@ set $default_gaps_outer 3
 gaps inner $default_gaps_inner
 gaps outer $default_gaps_outer
 
-client.focused            #f0f8ff #0e0d0e #BBBBBB #4F4F4F #E1FCFF
+client.focused            #fa5f85 #fa5f85 #BBBBBB #4F4F4F #fa5f85
 client.focused_inactive   #1A1A1A #0d010d #424242 #121212 #0d010d
 client.unfocused          #030706 #0d010d #4F4F4F #4F4F4F #0d010d
 client.urgent             #1A1A1A #0d010d #a5a5a5 #1A1A1A #0d010d
@@ -29,14 +20,14 @@ new_float pixel 2
 floating_modifier Mod1
 focus_follows_mouse no
 #Exec urxvt
-bindsym Mod4+Return exec --no-startup-id urxvt
+bindsym Mod4+Return exec --no-startup-id alacritty
 
 # Sound
-bindsym F3 exec amixer set Master 5%- unmute
-bindsym F4 exec amixer set Master 5%+ unmute
+bindsym F2 exec amixer set Master 5%- unmute
+bindsym F3 exec amixer set Master 5%+ unmute
 # Brightness Controls #
-bindsym F6 exec xbacklight +10
-bindsym F5 exec xbacklight -10
+bindsym F6 exec xbacklight -inc 6
+bindsym F5 exec xbacklight -dec 6
 
 # Kill windows
 bindsym Mod1+q kill
@@ -110,10 +101,7 @@ bindsym Mod1+5 workspace 5
 bindsym Mod1+6 workspace 6
 bindsym Mod1+7 workspace 7
 bindsym Mod1+8 workspace 8
-#bindsym Mod1+5 workspace 9
-# 
-# 
-# 
+
 # move focused container to workspace
 bindsym Mod1+Shift+1 move container to workspace 1
 bindsym Mod1+Shift+2 move container to workspace 2
@@ -138,16 +126,16 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym $left       resize shrink width 1 px or 1 ppt
-        bindsym $down       resize grow height 1 px or 1 ppt
-        bindsym $up         resize shrink height 1 px or 1 ppt
-        bindsym $right      resize grow width 1 px or 1 ppt
+        bindsym $left       resize shrink width 5 px or 5 ppt
+        bindsym $down       resize grow height 5 px or 5 ppt
+        bindsym $up         resize shrink height 5 px or 5 ppt
+        bindsym $right      resize grow width 5 px or 5 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left        resize shrink width 1 px or 1 ppt
-        bindsym Down        resize grow height 1 px or 1 ppt
-        bindsym Up          resize shrink height 1 px or 1 ppt
-        bindsym Right       resize grow width 1 px or 1 ppt
+        bindsym Left        resize shrink width 5 px or 5 ppt
+        bindsym Down        resize grow height 5 px or 5 ppt
+        bindsym Up          resize shrink height 5 px or 5 ppt
+        bindsym Right       resize grow width 5 px or 5 ppt
 
         # back to normal: Enter or Escape
         bindsym Return mode "default"
@@ -156,29 +144,27 @@ mode "resize" {
 
 bindsym Mod1+r mode "resize"
 
-################
-### i3status ###
-################
+bar {
+	status_command i3status --config ~/.config/i3/i3status.conf	
 
-#bar {
-#	status_command polybar --config ~/.config/polybar/config	
+         position top
+         font:Hack 10
+         colors {
+             background  #131314
+             statusline  #76c6c7
+             separator   #ff00ff
+             focused_workspace   #333333 #333333 #FFFFFF
+             active_workspace    #212121 #212121 #FFFFFF
+             inactive_workspace  #212121 #212121 #888888
+             urgent_workspace    #2F343A #D64E4E #FFFFFF
+        }
+}
 
- #       position top
-  #      font:FontAwesome 12
-   #     colors {
-#
- #           background  #0a1117
-  #          statusline  #DDDDDD
-#	          separator   #000000
- #           focused_workspace   #333333 #333333 #FFFFFF
-  #          active_workspace    #212121 #212121 #FFFFFF
-   #         inactive_workspace  #212121 #212121 #888888
-    #        urgent_workspace    #2F343A #D64E4E #FFFFFF
-#        }
-#}
-
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec_always --no-startup-id setxkbmap "us, ru" "grp:shift_toggle" rofi
+exec compton -f --vsync drm
+exec setxkbmap -layout us,ru
+exec setxkbmap -option 'grp:shift_toggle'
 exec_always --no-startup-id nitrogen --restore
-#exec_always synclient TouchpadOff=0
+exec_always --no-startup-id rofi
+exec_always synclient TouchpadOff=0
+
 

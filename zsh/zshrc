@@ -1,24 +1,40 @@
 # Mankind was born on earth. it was never meant to die here.
 
+setxkbmap -option 'grp:shift_toggle'
+
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.gem/ruby/2.4.0/bin:$PATH
 #export SSH_KEY_PATH="~/.ssh/rsa_id"
 export ZSH=/home/sexy/.oh-my-zsh
 export ARCHFLAGS="-arch x86_64"
+export LC_ALL="en_US.UTF-8"
 export LANG=en_US.UTF-8
 export EDITOR='nvim'
 export TERM='xterm'
+export GPG_TTY=$(tty)
 
-# CUSTOM DIRECTORY PATH #
+
+fpath+=~/.zfunc
+
+#################################
+##### CUSTOM DIRECTORY PATH #####
+#################################
 Deploy=$HOME/Coding/Deployment
 Django=$HOME/Coding/Django
 
-######### GO LANG ################
+##################################
+########### GO LANG ##############
+##################################
 #export GOPATH=$HOME/Coding/Go
 #export GOBIN=$GOPATH/bin
 #export GOPHER=$GOPATH/src/GoBook
+
+##################################
+############# Rust ###############
+##################################
 export RUSTLANG=$HOME/Coding/Rust
 
-ZSH_THEME="apple"
+ZSH_THEME="smt"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -31,9 +47,19 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(systemd git python django)
 source $ZSH/oh-my-zsh.sh
 
-alias pacs="sudo -E pacman -S"
-alias pacs-sync="sudo -E pacman -Syu"
+###################################
+############ Alias'es #############
+###################################
+
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+alias grep='grep --color'
+alias zshrc='$EDITOR ~/.zshrc' # Quick access to the ~/.zshrc file
+
+alias pacs="_ -E pacman -S"
+alias pacs-sync="_ -E pacman -Syu"
 alias offline="systemctl poweroff"
 alias dial-up="nmcli dev wifi"
 alias top10='ps -e -o rss,command | awk '"'"'{arr[$2]+=$1}END {for (i in arr) print i"\t"arr[i]/1024"Mb"}'"'"' | sort -k 2 -n -r | head | nl'
-
