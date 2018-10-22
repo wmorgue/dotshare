@@ -1,127 +1,46 @@
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!! 		 URXVT MAIN  	    !!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!-------------------------------------------
-! XFT Settings gre
+*background: #1e1e20
+*foreground: #c5c8c6
+*cursorColor: #c5c8c6
 
-Xft.antialias:  true
-Xft.autohint:   true
-Xft.dpi:        98
-Xft.hinting:    true
-Xft.hintstyle:  hintfull
-Xft.lcdfilter:  lcddefault
-Xft.rgba:       rgb
+*color0: #1e1e20
+*color8: #a1abad
+*color1: #80969b
+*color9: #80969b
+*color2: #56737a
+*color10: #56737a
+*color3: #416269
+*color11: #416269
+*color4: #2c5159
+*color12: #2c5159
+*color5: #274850
+*color13: #274850
+*color6: #1e383e
+*color14: #1e383e
+*color7: #a1abad
+*color15:                         #E8E8E8
 
-! URXVT - Settings
-*.font: xft:Terminus:size=12
-URxvt*depth:                        32
-URxvt*internalBorder:               45
-URxvt*dynamicColors:                on
-URxvt*urgentOnBell:                 true
-URxvt*borderLess:                   false
-URxvt*scrollBar:                    false
-URxvt*cursorBlink:                  true
-URxvt*cursorUnderline:              true
-URxvt*cursorColor:                  #737077
-URxvt*scrollColor:                  #151515
-
-
-! Extremely Light Grey & Super Dark Grey Blue & Extremely Light Grey
-*.foreground:   #c5c8c6
-*.background:   #232f39
-*.cursorColor:  #c5c8c6
-
-! Super Dark Grey Blue & Light blue
-*.color0:       #232f39
-*.color8:       #6dc6e4
-
-! Darker Blue
-*.color1:       #5fabd9
-*.color9:       #5fabd9
-
-! Light Blue
-*.color2:       #6dc6e4
-*.color10:      #6dc6e4
-
-! Grey
-*.color3:       #9da8ab
-*.color11:      #9da8ab
-
-! Light Green
-*.color4:       #a1d19d
-*.color12:      #a1d19d
-
-! Lighter Grey
-*.color5:       #b3b6c3
-*.color13:      #b3b6c3
-
-! Super Light Blue
-*.color6:       #a1d2e0
-*.color14:      #a1d2e0
-
-! I can't believe it's not white
-*.color7:       #e3e9e8
-*.color15: #e3e9e8
-
-
-! special
-!*.foreground:   #c7ccd1
-!*.background:   #1c2023
-!*.cursorColor:  #c7ccd1
-
-! black
-!*.color0:       #1c2023
-!*.color8:       #747c84
-
-! red
-!*.color1:       #c7ae95
-!*.color9:       #c7ae95
-
-! green
-!*.color2:       #95c7ae
-!*.color10:      #95c7ae
-
-! yellow
-!*.color3:       #aec795
-!*.color11:      #aec795
-
-! blue
-!*.color4:       #ae95c7
-!*.color12:      #ae95c7
-
-! magenta
-!*.color5:       #c795ae
-!*.color13:      #c795ae
-
-! cyan
-!*.color6:       #95aec7
-!*.color14:      #95aec7
-
-! white
-!*.color7:       #c7ccd1
-!*.color15:      #f3f4f5
-
-!--------------------------------------------
-! General Colors
-! ROFI Color theme
-! ------------------------------------------------------------------------------
-
-rofi.opacity:  65
-rofi.width:    30
-rofi.lines: 7
+URxvt.font: xft:Terminus :size=10
+URxvt.depth:                      32
+URxvt*scrollBar:                  false
+URxvt*mouseWheelScrollPage:       false
+URxvt*cursorBlink:                true
+URxvt*saveLines:                  5000
+URxvt*internalBorder: 45
+URxvt*geometry: 70x19
 
 rofi.color-enabled: true
-!                  Background   Foreground  Background Alternate    Highlight Background    Highlight Foreground
-rofi.color-normal:                   argb:00232F39, #E3E9E8, argb:00232F39, argb:FF6DC6E4, argb:FF232F39
-rofi.color-urgent:                   argb:00232F39, #5FABD9, #232F39, #5FABD9, #E3E9E8
-rofi.color-active:                   argb:00232F39, #E3E9E8, #232F39, #6DC6E4, #232F39
-rofi.color-window:                   argb:E6232F39, #232F39, #6DC6E4
-rofi.font: Terminus Regular 12
+rofi.color-window: #1e1e20, #2c5159, #2c5159
+rofi.color-normal: #1e1e20, #c5c8c6, #1e1e20, #1e1e20, #2c5159
+rofi.color-active: #1e1e20, #c5c8c6, #1e1e20, #1e1e20, #2c5159
+rofi.color-urgent: #1e1e20, #c5c8c6, #1e1e20, #1e1e20, #2c5159
 
-rofi.terminal: xterm
-rofi.fuzzy: true
-rofi.kb-cancel: Escape,Control+c
+rofi.drun-icon-theme: MacOS
+rofi.separator-style: solid
+rofi.sidebar-mode: false
+rofi.lines: 5
+rofi.font: Source Code Pro Semibold 10.5
+rofi.bw: 1
+rofi.columns: 2
+rofi.padding: 5
+rofi.fixed-num-lines: true
 rofi.hide-scrollbar: true
-rofi.separator-style: dash
-rofi.fake-transparency: false
-rofi.auto-select: true
