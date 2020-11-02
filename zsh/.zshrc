@@ -1,25 +1,21 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block, everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
+# export HOMEBREW_NO_AUTO_UPDATE=1
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export TOOLCHAINS="swift"
+export TOOLCHAINS=swift
+export PATH=/usr/local/opt/openssl/bin:$PATH
 
 export RANGER_LOAD_DEFAULT_RC="FALSE"
-export PATH="/usr/local/opt/openssl/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/openssl/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl/include"
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH=$HOME/.oh-my-zsh
 export UPDATE_ZSH_DAYS=14
-export EDITOR="nvim"
+export EDITOR=$(which nvim)
 
+# Rust/Cargo completions
+fpath+=~/.zfunc
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
+#ZSH_THEME="random"
 
-CASE_SENSITIVE="true"
+# CASE_SENSITIVE="true"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
@@ -48,7 +44,9 @@ COMPLETION_WAITING_DOTS="true"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
-development="$HOME/Development/Swift"
+swift=$HOME/Developer/Swift
+rust=$HOME/Developer/Rust
+work=$HOME/Developer/Work
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -56,6 +54,7 @@ development="$HOME/Development/Swift"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	git
+    swiftpm
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -85,13 +84,15 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
-alias htop='htop --delay=0'
+alias purge='sudo purge'
 alias grep='grep --color'
+alias htop='htop -d 0'
 alias zshrc='$EDITOR ~/.zshrc'
-alias swift-fmt='swift-format -m format -i -r --configuration $development/config.json'
+alias bump='brew upgrade; brew upgrade --cask; brew cleanup'
 alias swift-lint='swift-format -m lint -r'
+alias xcode='open -a /Applications/Xcode.app'
 alias hwinfo='system_profiler SPHardwareDataType'
 alias cpu_name='sysctl -n machdep.cpu.brand_string'
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+eval "$(starship init zsh)"
