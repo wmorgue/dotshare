@@ -38,7 +38,6 @@ libunistring
 libusb
 libusbmuxd
 libuv
-libvterm
 lsd
 luajit-openresty
 luv
@@ -85,9 +84,10 @@ zeromq
 zsh
 zsh-autosuggestions
 zsh-syntax-highlighting
+android-file-transfer
 android-platform-tools
-angry-ip-scanner
 balenaetcher
+coconutbattery
 db-browser-for-sqlite
 discord
 figma
@@ -100,4 +100,3 @@ telegram
 transmission
 visual-studio-code
 whatsapp
-zoom
