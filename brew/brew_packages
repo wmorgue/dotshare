@@ -17,7 +17,6 @@ htop
 httpie
 icu4c
 iproute2mac
-ipython
 jq
 ldid
 libassuan
@@ -30,7 +29,6 @@ libimobiledevice
 libksba
 libnghttp2
 libplist
-libsodium
 libtasn1
 libtermkey
 libtool
@@ -80,7 +78,6 @@ vifm
 wget
 xz
 youtube-dl
-zeromq
 zsh
 zsh-autosuggestions
 zsh-syntax-highlighting
