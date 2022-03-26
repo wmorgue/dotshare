@@ -3,6 +3,7 @@
 #export HOMEBREW_NO_AUTO_UPDATE=1
 export PATH=/usr/local/opt/openssl/bin:$PATH
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$PATH:~/.spoof-dpi/bin
 export PATH="/usr/local/sbin:$PATH"
 export TOOLCHAINS=swift
 export LANG=en_US.UTF-8
@@ -102,6 +103,7 @@ alias cpu_name='sysctl -n machdep.cpu.brand_string'
 alias devices='xcrun xctrace list devices'
 alias latest_xcode='http -b https://xcodereleases.com/data.json | jq ".[0].version"'
 alias stop_usbd='killall -STOP -c usbd'
+alias git_open='open `git remote get-url origin`'
 
 eval "$(starship init zsh)"
 
