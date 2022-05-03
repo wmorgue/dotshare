@@ -3,6 +3,7 @@ bdw-gc
 brotli
 c-ares
 ca-certificates
+code-server
 dust
 gdbm
 gettext
@@ -40,6 +41,7 @@ lsd
 luajit-openresty
 luv
 m4
+macos-term-size
 make
 mitmproxy
 mpdecimal
@@ -49,6 +51,7 @@ neovim
 nettle
 nmap
 node
+node@14
 npth
 oniguruma
 openssl@1.1
@@ -61,7 +64,6 @@ pkg-config
 protobuf
 pv
 python@3.10
-python@3.9
 readline
 ripgrep
 rustscan
@@ -76,17 +78,18 @@ unbound
 unibilium
 vifm
 wget
+xcinfo
 xz
 youtube-dl
 zsh
 zsh-autosuggestions
 zsh-syntax-highlighting
+aerial
 android-platform-tools
 balenaetcher
 coconutbattery
 db-browser-for-sqlite
 figma
-flutter
 font-fira-code
 font-hack-nerd-font
 iterm2
