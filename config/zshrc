@@ -1,89 +1,38 @@
-# Export
+# Brand new config for mac mini M2
 
-#export HOMEBREW_NO_AUTO_UPDATE=1
-export PATH=/usr/local/opt/openssl/bin:$PATH
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$PATH:~/.spoof-dpi/bin
-export PATH="/usr/local/sbin:$PATH"
+### Export's ###
 export TOOLCHAINS=swift
 export LANG=en_US.UTF-8
+export ZSH="$HOME/.oh-my-zsh"
 
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export CPPFLAGS="-I/usr/local/opt/openssl/include"
 export LDFLAGS="-L/usr/local/opt/openssl/lib"
 export ZSH=$HOME/.oh-my-zsh
-export EDITOR=$(which nvim)
-
-
-# Rust/Cargo completions
-fpath+=~/.zfunc
-
-###-begin-flutter-completion-###
-
-if type complete &>/dev/null; then
-  __flutter_completion() {
-    local si="$IFS"
-    IFS=$'\n' COMPREPLY=($(COMP_CWORD="$COMP_CWORD" \
-                           COMP_LINE="$COMP_LINE" \
-                           COMP_POINT="$COMP_POINT" \
-                           flutter completion -- "${COMP_WORDS[@]}" \
-                           2>/dev/null)) || return $?
-    IFS="$si"
-  }
-  complete -F __flutter_completion flutter
-elif type compdef &>/dev/null; then
-  __flutter_completion() {
-    si=$IFS
-    compadd -- $(COMP_CWORD=$((CURRENT-1)) \
-                 COMP_LINE=$BUFFER \
-                 COMP_POINT=0 \
-                 flutter completion -- "${words[@]}" \
-                 2>/dev/null)
-    IFS=$si
-  }
-  compdef __flutter_completion flutter
-elif type compctl &>/dev/null; then
-  __flutter_completion() {
-    local cword line point words si
-    read -Ac words
-    read -cn cword
-    let cword-=1
-    read -l line
-    read -ln point
-    si="$IFS"
-    IFS=$'\n' reply=($(COMP_CWORD="$cword" \
-                       COMP_LINE="$line" \
-                       COMP_POINT="$point" \
-                       flutter completion -- "${words[@]}" \
-                       2>/dev/null)) || return $?
-    IFS="$si"
-  }
-  compctl -K __flutter_completion flutter
-fi
-
-###-end-flutter-completion-###
-
+### End export's ###
 
 DISABLE_AUTO_UPDATE="true"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
+
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 swift=$HOME/Developer/Swift
-rust=$HOME/Developer/Rust
-work=$HOME/Developer/Work
-mitm=$HOME/Developer/Mitmproxy
+# rust=$HOME/Developer/Rust
+# work=$HOME/Developer/Work
+# mitm=$HOME/Developer/Mitmproxy
+
 
 # Which plugins would you like to load?
-plugins=(
-	git
-)
+plugins=(git)
+
 
 # Source
 source $ZSH/oh-my-zsh.sh
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 
 #Alias
 alias ls='lsd -1'
@@ -106,4 +55,3 @@ alias stop_usbd='killall -STOP -c usbd'
 alias git_open='open `git remote get-url origin`'
 
 eval "$(starship init zsh)"
-
