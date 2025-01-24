@@ -1,0 +1,704 @@
+{
+  "data" : [
+    {
+      "attributes" : {
+        "alwaysEnableForSupportedProductTypes" : false,
+        "description" : "App groups gives multiple apps access to shared containers and allows certain additional communication between the apps.",
+        "developmentOnly" : false,
+        "distributionTypes" : [
+          {
+            "displayValue" : "Development",
+            "name" : "DEVELOPMENT"
+          }
+        ],
+        "documentationURL" : "https:\/\/developer.apple.com\/documentation\/xcode\/configuring-app-groups",
+        "enabledByDefault" : false,
+        "entitlements" : [
+          {
+            "description" : "Application Groups entitlement",
+            "isRequiredInPlist" : true,
+            "name" : "Application Groups entitlement",
+            "profileKey" : "com.apple.security.application-groups",
+            "values" : [
+              {
+                "inference" : "constant",
+                "value" : "${applicationGroupBundle.specialIdentifier.identifier}"
+              }
+            ],
+            "valueType" : "ARRAY"
+          }
+        ],
+        "imageUrl" : "\/assets\/elements\/icons\/cip\/capabilities\/portal-app-groups.svg",
+        "isPublic" : true,
+        "name" : "App Groups",
+        "supportedProductTypes" : [
+          "com.apple.product-type.application",
+          "com.apple.product-type.application.on-demand-install-capable",
+          "com.apple.product-type.application.watchapp2",
+          "com.apple.product-type.system-extension",
+          "com.apple.product-type.xpc-service"
+        ],
+        "supportedSDKs" : [
+          {
+            "name" : "IOS"
+          },
+          {
+            "name" : "MAC_OS"
+          },
+          {
+            "name" : "TV_OS"
+          },
+          {
+            "name" : "VISION_OS"
+          },
+          {
+            "name" : "WATCH_OS"
+          }
+        ],
+        "validTeamTypes" : [
+          "APPLE_DEVELOPER_ENTERPRISE_PROGRAM",
+          "APPLE_DEVELOPER_PROGRAM",
+          "UNIVERSITY_PROGRAM",
+          "XCODE_FREE_PROGRAM"
+        ]
+      },
+      "id" : "APP_GROUPS",
+      "type" : "capabilities"
+    },
+    {
+      "attributes" : {
+        "alwaysEnableForSupportedProductTypes" : false,
+        "description" : "Data protection allows an app that accesses sensitive user data to use the built-in encryption available on some devices.",
+        "developmentOnly" : false,
+        "distributionTypes" : [
+          {
+            "displayValue" : "Development",
+            "name" : "DEVELOPMENT"
+          }
+        ],
+        "documentationURL" : "https:\/\/developer.apple.com\/documentation\/uikit\/protecting_the_user_s_privacy\/encrypting_your_app_s_files",
+        "enabledByDefault" : false,
+        "imageUrl" : "\/assets\/elements\/icons\/cip\/capabilities\/portal-data-protection.svg",
+        "isPublic" : true,
+        "name" : "Data Protection",
+        "settings" : [
+          {
+            "key" : "DATA_PROTECTION_PERMISSION_LEVEL",
+            "options" : [
+              {
+                "enabledByDefault" : true,
+                "entitlements" : [
+                  {
+                    "description" : "Data Protection Permission - Complete Entitlement",
+                    "isRequiredInPlist" : false,
+                    "name" : "Data Protection Permission - Complete",
+                    "profileKey" : "com.apple.developer.default-data-protection",
+                    "values" : [
+                      {
+                        "inference" : "constant",
+                        "value" : "NSFileProtectionComplete"
+                      }
+                    ],
+                    "valueType" : "STRING"
+                  }
+                ],
+                "key" : "COMPLETE_PROTECTION"
+              },
+              {
+                "enabledByDefault" : false,
+                "entitlements" : [
+                  {
+                    "description" : "Data Protection Permission - Unless Open Entitlement",
+                    "isRequiredInPlist" : false,
+                    "name" : "Data Protection Permission - Unless Open",
+                    "profileKey" : "com.apple.developer.default-data-protection",
+                    "values" : [
+                      {
+                        "inference" : "constant",
+                        "value" : "NSFileProtectionCompleteUnlessOpen"
+                      }
+                    ],
+                    "valueType" : "STRING"
+                  }
+                ],
+                "key" : "PROTECTED_UNLESS_OPEN"
+              },
+              {
+                "enabledByDefault" : false,
+                "entitlements" : [
+                  {
+                    "description" : "Data Protection Permission - Until Open Entitlement",
+                    "isRequiredInPlist" : false,
+                    "name" : "Data Protection Permission - Until Open",
+                    "profileKey" : "com.apple.developer.default-data-protection",
+                    "values" : [
+                      {
+                        "inference" : "constant",
+                        "value" : "NSFileProtectionCompleteUntilFirstUserAuthentication"
+                      }
+                    ],
+                    "valueType" : "STRING"
+                  }
+                ],
+                "key" : "PROTECTED_UNTIL_FIRST_USER_AUTH"
+              }
+            ]
+          }
+        ],
+        "sfSymbolIcon" : "lock",
+        "supportedProductTypes" : [
+          "com.apple.product-type.application",
+          "com.apple.product-type.application.on-demand-install-capable",
+          "com.apple.product-type.xpc-service"
+        ],
+        "supportedSDKs" : [
+          {
+            "name" : "IOS"
+          },
+          {
+            "name" : "TV_OS"
+          },
+          {
+            "name" : "VISION_OS"
+          },
+          {
+            "name" : "WATCH_OS"
+          }
+        ],
+        "validTeamTypes" : [
+          "APPLE_DEVELOPER_ENTERPRISE_PROGRAM",
+          "APPLE_DEVELOPER_PROGRAM",
+          "UNIVERSITY_PROGRAM",
+          "XCODE_FREE_PROGRAM"
+        ]
+      },
+      "id" : "DATA_PROTECTION",
+      "type" : "capabilities"
+    },
+    {
+      "attributes" : {
+        "alwaysEnableForSupportedProductTypes" : false,
+        "description" : "The MapKit framework provides an interface for embedding maps directly into your own windows and views of your app.",
+        "developmentOnly" : false,
+        "distributionTypes" : [
+          {
+            "displayValue" : "Development",
+            "name" : "DEVELOPMENT"
+          }
+        ],
+        "documentationURL" : "https:\/\/developer.apple.com\/documentation\/xcode\/configuring-maps-support",
+        "enabledByDefault" : false,
+        "entitlements" : [
+          {
+            "description" : "Maps",
+            "isRequiredInPlist" : true,
+            "name" : "Maps",
+            "profileKey" : "com.apple.developer.maps",
+            "values" : [
+              {
+                "inference" : "constant",
+                "value" : "true"
+              }
+            ],
+            "valueType" : "BOOLEAN"
+          }
+        ],
+        "imageUrl" : "\/assets\/elements\/icons\/cip\/capabilities\/portal-maps.svg",
+        "isPublic" : true,
+        "name" : "Maps",
+        "sfSymbolIcon" : "map",
+        "supportedProductTypes" : [
+          "com.apple.product-type.application",
+          "com.apple.product-type.xpc-service"
+        ],
+        "supportedSDKs" : [
+          {
+            "name" : "MAC_OS"
+          }
+        ],
+        "validTeamTypes" : [
+          "APPLE_DEVELOPER_ENTERPRISE_PROGRAM",
+          "APPLE_DEVELOPER_PROGRAM",
+          "XCODE_FREE_PROGRAM"
+        ]
+      },
+      "id" : "MAPS",
+      "type" : "capabilities"
+    },
+    {
+      "attributes" : {
+        "alwaysEnableForSupportedProductTypes" : false,
+        "description" : "Game Center allows players to connect to the Game Center service, enabling them to interact with their friends, view leader boards, or play head to head in your game.",
+        "developmentOnly" : false,
+        "distributionTypes" : [
+          {
+            "displayValue" : "Development",
+            "name" : "DEVELOPMENT"
+          }
+        ],
+        "documentationURL" : "https:\/\/developer.apple.com\/documentation\/appstoreconnectapi\/game_center",
+        "enabledByDefault" : false,
+        "entitlements" : [
+          {
+            "description" : "Select Game Center for MAC",
+            "isRequiredInPlist" : true,
+            "name" : "macOS",
+            "profileKey" : "com.apple.developer.game-center",
+            "values" : [
+              {
+                "inference" : "constant",
+                "value" : "true"
+              }
+            ],
+            "valueType" : "BOOLEAN"
+          }
+        ],
+        "imageUrl" : "\/assets\/elements\/icons\/cip\/capabilities\/portal-game-center.svg",
+        "isPublic" : true,
+        "name" : "Game Center",
+        "sfSymbolIcon" : "gamecenter",
+        "supportedProductTypes" : [
+          "com.apple.product-type.application",
+          "com.apple.product-type.application.on-demand-install-capable",
+          "com.apple.product-type.xpc-service"
+        ],
+        "supportedSDKs" : [
+          {
+            "name" : "IOS"
+          },
+          {
+            "name" : "MAC_OS"
+          },
+          {
+            "name" : "TV_OS"
+          },
+          {
+            "name" : "VISION_OS"
+          },
+          {
+            "name" : "WATCH_OS"
+          }
+        ],
+        "validTeamTypes" : [
+          "APPLE_DEVELOPER_ENTERPRISE_PROGRAM",
+          "APPLE_DEVELOPER_PROGRAM",
+          "UNIVERSITY_PROGRAM",
+          "XCODE_FREE_PROGRAM"
+        ]
+      },
+      "id" : "GAME_CENTER",
+      "type" : "capabilities"
+    },
+    {
+      "attributes" : {
+        "alwaysEnableForSupportedProductTypes" : false,
+        "description" : "Capability to migrate apps to macOS platform",
+        "developmentOnly" : false,
+        "distributionTypes" : [
+          {
+            "displayValue" : "Development",
+            "name" : "DEVELOPMENT"
+          }
+        ],
+        "enabledByDefault" : false,
+        "entitlements" : [
+          {
+            "description" : "Application Identifier Entitlement for Marzipan enabled profiles",
+            "isRequiredInPlist" : false,
+            "name" : "App Identifier Entitlement for Marzipan profiles",
+            "profileKey" : "com.apple.developer.associated-application-identifier",
+            "values" : [
+
+            ],
+            "valueType" : "ARRAY"
+          }
+        ],
+        "imageUrl" : "\/assets\/elements\/icons\/cip\/capabilities\/portal-macbookair.svg",
+        "isPublic" : true,
+        "name" : "Mac Catalyst",
+        "settings" : [
+          {
+            "key" : "MARZIPAN_APP_SETUP",
+            "options" : [
+              {
+                "enabledByDefault" : true,
+                "key" : "USE_IOS_APPID"
+              },
+              {
+                "enabledByDefault" : false,
+                "key" : "USE_MACOS_APPID"
+              }
+            ]
+          }
+        ],
+        "supportedSDKs" : [
+          {
+            "name" : "MAC_OS"
+          }
+        ],
+        "validTeamTypes" : [
+          "APPLE_DEVELOPER_ENTERPRISE_PROGRAM",
+          "APPLE_DEVELOPER_PROGRAM",
+          "XCODE_FREE_PROGRAM"
+        ]
+      },
+      "id" : "ENABLED_FOR_MAC",
+      "type" : "capabilities"
+    },
+    {
+      "attributes" : {
+        "alwaysEnableForSupportedProductTypes" : false,
+        "description" : "Enables an app to exceed the default app memory limit on supported devices.",
+        "developmentOnly" : false,
+        "distributionTypes" : [
+          {
+            "displayValue" : "Development",
+            "name" : "DEVELOPMENT"
+          }
+        ],
+        "documentationURL" : "https:\/\/developer.apple.com\/documentation\/bundleresources\/entitlements\/com_apple_developer_kernel_increased-memory-limit",
+        "enabledByDefault" : false,
+        "entitlements" : [
+          {
+            "description" : "Increased Memory Limit",
+            "isRequiredInPlist" : true,
+            "name" : "Increased Memory Limit entitlement",
+            "profileKey" : "com.apple.developer.kernel.increased-memory-limit",
+            "values" : [
+              {
+                "inference" : "constant",
+                "value" : "true"
+              }
+            ],
+            "valueType" : "BOOLEAN"
+          }
+        ],
+        "imageUrl" : "\/assets\/elements\/icons\/cip\/capabilities\/portal-extenvaddr.svg",
+        "isPublic" : true,
+        "name" : "Increased Memory Limit",
+        "supportedProductTypes" : [
+          "com.apple.product-type.application"
+        ],
+        "supportedSDKs" : [
+          {
+            "name" : "IOS"
+          },
+          {
+            "name" : "VISION_OS"
+          }
+        ],
+        "validTeamTypes" : [
+          "APPLE_DEVELOPER_ENTERPRISE_PROGRAM",
+          "APPLE_DEVELOPER_PROGRAM",
+          "UNIVERSITY_PROGRAM",
+          "XCODE_FREE_PROGRAM"
+        ]
+      },
+      "id" : "INCREASED_MEMORY_LIMIT",
+      "type" : "capabilities"
+    },
+    {
+      "attributes" : {
+        "alwaysEnableForSupportedProductTypes" : false,
+        "description" : "Inter-App Audio allows an app to send audio to and receive audio from other Inter-App Audio-enabled apps.",
+        "developmentOnly" : false,
+        "distributionTypes" : [
+          {
+            "displayValue" : "Development",
+            "name" : "DEVELOPMENT"
+          }
+        ],
+        "enabledByDefault" : false,
+        "entitlements" : [
+          {
+            "description" : "Inter App Audio Entitlement",
+            "isRequiredInPlist" : true,
+            "name" : "Inter App Audio",
+            "profileKey" : "inter-app-audio",
+            "values" : [
+              {
+                "inference" : "constant",
+                "value" : "true"
+              }
+            ],
+            "valueType" : "BOOLEAN"
+          }
+        ],
+        "imageUrl" : "\/assets\/elements\/icons\/cip\/capabilities\/portal-inter-app-audio.svg",
+        "isPublic" : true,
+        "name" : "Inter-App Audio",
+        "supportedProductTypes" : [
+          "com.apple.product-type.application",
+          "com.apple.product-type.xpc-service"
+        ],
+        "supportedSDKs" : [
+          {
+            "name" : "IOS"
+          }
+        ],
+        "validTeamTypes" : [
+          "APPLE_DEVELOPER_ENTERPRISE_PROGRAM",
+          "APPLE_DEVELOPER_PROGRAM",
+          "UNIVERSITY_PROGRAM",
+          "XCODE_FREE_PROGRAM"
+        ]
+      },
+      "id" : "INTER_APP_AUDIO",
+      "type" : "capabilities"
+    },
+    {
+      "attributes" : {
+        "alwaysEnableForSupportedProductTypes" : false,
+        "description" : "HomeKit allows users to manage connected accessories in their home using an app.",
+        "developmentOnly" : false,
+        "distributionTypes" : [
+          {
+            "displayValue" : "Development",
+            "name" : "DEVELOPMENT"
+          }
+        ],
+        "documentationURL" : "https:\/\/developer.apple.com\/documentation\/homekit\/enabling_homekit_in_your_app",
+        "enabledByDefault" : false,
+        "entitlements" : [
+          {
+            "description" : "HomeKit Entitlement",
+            "isRequiredInPlist" : true,
+            "name" : "HomeKit",
+            "profileKey" : "com.apple.developer.homekit",
+            "values" : [
+              {
+                "inference" : "constant",
+                "value" : "true"
+              }
+            ],
+            "valueType" : "BOOLEAN"
+          }
+        ],
+        "imageUrl" : "\/assets\/elements\/icons\/cip\/capabilities\/portal-homekit.svg",
+        "isPublic" : true,
+        "name" : "HomeKit",
+        "sfSymbolIcon" : "homekit",
+        "supportedProductTypes" : [
+          "com.apple.product-type.application",
+          "com.apple.product-type.xpc-service"
+        ],
+        "supportedSDKs" : [
+          {
+            "name" : "IOS"
+          },
+          {
+            "name" : "TV_OS"
+          },
+          {
+            "name" : "VISION_OS"
+          },
+          {
+            "name" : "WATCH_OS"
+          }
+        ],
+        "validTeamTypes" : [
+          "APPLE_DEVELOPER_ENTERPRISE_PROGRAM",
+          "APPLE_DEVELOPER_PROGRAM",
+          "UNIVERSITY_PROGRAM",
+          "XCODE_FREE_PROGRAM"
+        ]
+      },
+      "id" : "HOMEKIT",
+      "type" : "capabilities"
+    },
+    {
+      "attributes" : {
+        "alwaysEnableForSupportedProductTypes" : false,
+        "description" : "The AutoFill credential provider allows an app to provide user names and passwords for AutoFill in Safari and other apps, with user permission.",
+        "developmentOnly" : false,
+        "distributionTypes" : [
+          {
+            "displayValue" : "Development",
+            "name" : "DEVELOPMENT"
+          }
+        ],
+        "documentationURL" : "https:\/\/developer.apple.com\/documentation\/security\/password_autofill\/",
+        "enabledByDefault" : false,
+        "entitlements" : [
+          {
+            "description" : "AutoFill Credential Provider entitlement",
+            "isRequiredInPlist" : true,
+            "name" : "AutoFill Credential Provider entitlement",
+            "profileKey" : "com.apple.developer.authentication-services.autofill-credential-provider",
+            "values" : [
+              {
+                "inference" : "constant",
+                "value" : "true"
+              }
+            ],
+            "valueType" : "BOOLEAN"
+          }
+        ],
+        "imageUrl" : "\/assets\/elements\/icons\/cip\/capabilities\/c87487dswl.svg",
+        "isPublic" : true,
+        "name" : "AutoFill Credential Provider",
+        "sfSymbolIcon" : "rectangle.and.pencil.and.ellipsis",
+        "supportedProductTypes" : [
+          "com.apple.product-type.application",
+          "com.apple.product-type.xpc-service"
+        ],
+        "supportedSDKs" : [
+          {
+            "name" : "IOS"
+          },
+          {
+            "name" : "MAC_OS"
+          },
+          {
+            "name" : "VISION_OS"
+          }
+        ],
+        "validTeamTypes" : [
+          "APPLE_DEVELOPER_ENTERPRISE_PROGRAM",
+          "APPLE_DEVELOPER_PROGRAM",
+          "UNIVERSITY_PROGRAM",
+          "XCODE_FREE_PROGRAM"
+        ]
+      },
+      "id" : "AUTOFILL_CREDENTIAL_PROVIDER",
+      "type" : "capabilities"
+    },
+    {
+      "attributes" : {
+        "alwaysEnableForSupportedProductTypes" : false,
+        "description" : "The Wireless Accessory Configuration capability allows an app to configure MFi Wi-Fi accessories.",
+        "developmentOnly" : false,
+        "distributionTypes" : [
+          {
+            "displayValue" : "Development",
+            "name" : "DEVELOPMENT"
+          }
+        ],
+        "documentationURL" : "https:\/\/developer.apple.com\/documentation\/bundleresources\/entitlements\/com_apple_external-accessory_wireless-configuration\/",
+        "enabledByDefault" : false,
+        "entitlements" : [
+          {
+            "description" : "Wireless Accessory Configuration Entitlement",
+            "isRequiredInPlist" : true,
+            "name" : "Wireless Accessory Configuration",
+            "profileKey" : "com.apple.external-accessory.wireless-configuration",
+            "values" : [
+              {
+                "inference" : "constant",
+                "value" : "true"
+              }
+            ],
+            "valueType" : "BOOLEAN"
+          }
+        ],
+        "imageUrl" : "\/assets\/elements\/icons\/cip\/capabilities\/portal-wireless-accessory.svg",
+        "isPublic" : true,
+        "name" : "Wireless Accessory Configuration",
+        "sfSymbolIcon" : "wifi.circle",
+        "supportedProductTypes" : [
+          "com.apple.product-type.application",
+          "com.apple.product-type.xpc-service"
+        ],
+        "supportedSDKs" : [
+          {
+            "name" : "IOS"
+          }
+        ],
+        "validTeamTypes" : [
+          "APPLE_DEVELOPER_ENTERPRISE_PROGRAM",
+          "APPLE_DEVELOPER_PROGRAM",
+          "UNIVERSITY_PROGRAM",
+          "XCODE_FREE_PROGRAM"
+        ]
+      },
+      "id" : "WIRELESS_ACCESSORY_CONFIGURATION",
+      "type" : "capabilities"
+    },
+    {
+      "attributes" : {
+        "alwaysEnableForSupportedProductTypes" : false,
+        "description" : "HealthKit allows an app to read and write health and activity user data that appears in the Health app.",
+        "developmentOnly" : false,
+        "distributionTypes" : [
+          {
+            "displayValue" : "Development",
+            "name" : "DEVELOPMENT"
+          }
+        ],
+        "documentationURL" : "https:\/\/developer.apple.com\/documentation\/healthkit\/",
+        "enabledByDefault" : false,
+        "entitlements" : [
+          {
+            "description" : "HealthKit Entitlement",
+            "isRequiredInPlist" : true,
+            "name" : "HealthKit",
+            "profileKey" : "com.apple.developer.healthkit",
+            "values" : [
+              {
+                "inference" : "constant",
+                "value" : "true"
+              }
+            ],
+            "valueType" : "BOOLEAN"
+          },
+          {
+            "description" : "HealthKit Entitlement - Developer Access",
+            "isRequiredInPlist" : false,
+            "name" : "HealthKit - Developer Access",
+            "profileKey" : "com.apple.developer.healthkit.access",
+            "values" : [
+              {
+                "description" : "Enable access to clinical data types.",
+                "inference" : "constant",
+                "name" : "Clinical Health Records",
+                "value" : "health-records"
+              }
+            ],
+            "valueType" : "ARRAY"
+          },
+          {
+            "description" : "Allows Background Delivery of HealthKit Observer Queries",
+            "isRequiredInPlist" : false,
+            "name" : "HealthKit Background Delivery",
+            "profileKey" : "com.apple.developer.healthkit.background-delivery",
+            "values" : [
+              {
+                "inference" : "constant",
+                "value" : "true"
+              }
+            ],
+            "valueType" : "BOOLEAN"
+          }
+        ],
+        "imageUrl" : "\/assets\/elements\/icons\/cip\/capabilities\/portal-healthkit.svg",
+        "isPublic" : true,
+        "name" : "HealthKit",
+        "sfSymbolIcon" : "health",
+        "supportedProductTypes" : [
+          "com.apple.product-type.application",
+          "com.apple.product-type.watchkit2-extension",
+          "com.apple.product-type.xpc-service"
+        ],
+        "supportedSDKs" : [
+          {
+            "name" : "IOS"
+          },
+          {
+            "name" : "VISION_OS"
+          },
+          {
+            "name" : "WATCH_OS"
+          }
+        ],
+        "validTeamTypes" : [
+          "APPLE_DEVELOPER_ENTERPRISE_PROGRAM",
+          "APPLE_DEVELOPER_PROGRAM",
+          "UNIVERSITY_PROGRAM",
+          "XCODE_FREE_PROGRAM"
+        ]
+      },
+      "id" : "HEALTHKIT",
+      "type" : "capabilities"
+    }
+  ]
+}
