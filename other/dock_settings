@@ -1,0 +1,112 @@
+{
+    "last-analytics-stamp" =     (
+        "772092844.902377"
+    );
+    lastShowIndicatorTime = "759418601.579231";
+    launchanim = 0;
+    loc = "en_US:US";
+    mineffect = scale;
+    "minimize-to-application" = 1;
+    "mod-count" = 204;
+    "persistent-apps" =     (
+                {
+            GUID = 328381075;
+            "tile-data" =             {
+                book = {length = 564, bytes = 0x626f6f6b 34020000 00000410 30000000 ... 04000000 00000000 };
+                "bundle-identifier" = "org.mozilla.firefox";
+                "dock-extra" = 0;
+                "file-data" =                 {
+                    "_CFURLString" = "file:///Applications/Firefox.app/";
+                    "_CFURLStringType" = 15;
+                };
+                "file-label" = Firefox;
+                "file-mod-date" = 8366133833053;
+                "file-type" = 41;
+                "is-beta" = 0;
+                "parent-mod-date" = 110410262656076;
+            };
+            "tile-type" = "file-tile";
+        },
+                {
+            GUID = 1023669875;
+            "tile-data" =             {
+                book = {length = 584, bytes = 0x626f6f6b 48020000 00000410 30000000 ... 04000000 00000000 };
+                "bundle-identifier" = "com.apple.mail";
+                "dock-extra" = 0;
+                "file-data" =                 {
+                    "_CFURLString" = "file:///System/Applications/Mail.app/";
+                    "_CFURLStringType" = 15;
+                };
+                "file-label" = Mail;
+                "file-mod-date" = 3829181962;
+                "file-type" = 41;
+                "is-beta" = 0;
+                "parent-mod-date" = 3829181962;
+            };
+            "tile-type" = "file-tile";
+        },
+                {
+            "tile-data" =             {
+                book = {length = 564, bytes = 0x626f6f6b 34020000 00000410 30000000 ... 04000000 00000000 };
+                "bundle-identifier" = "com.mitchellh.ghostty";
+                "dock-extra" = 0;
+                "file-data" =                 {
+                    "_CFURLString" = "file:///Applications/Ghostty.app/";
+                    "_CFURLStringType" = 15;
+                };
+                "file-label" = Ghostty;
+                "file-mod-date" = 54751773792579;
+                "file-type" = 41;
+                "is-beta" = 0;
+                "parent-mod-date" = 110410262656076;
+            };
+            "tile-type" = "file-tile";
+        },
+                {
+            GUID = 1023669891;
+            "tile-data" =             {
+                book = {length = 596, bytes = 0x626f6f6b 54020000 00000410 30000000 ... 04000000 00000000 };
+                "bundle-identifier" = "com.apple.systempreferences";
+                "dock-extra" = 1;
+                "file-data" =                 {
+                    "_CFURLString" = "file:///System/Applications/System%20Settings.app/";
+                    "_CFURLStringType" = 15;
+                };
+                "file-label" = "System Settings";
+                "file-mod-date" = 3829181962;
+                "file-type" = 41;
+                "is-beta" = 0;
+                "parent-mod-date" = 3829181962;
+            };
+            "tile-type" = "file-tile";
+        },
+                {
+            "tile-data" =             {
+                book = {length = 560, bytes = 0x626f6f6b 30020000 00000410 30000000 ... 04000000 00000000 };
+                "bundle-identifier" = "app.yaak.desktop";
+                "dock-extra" = 0;
+                "file-data" =                 {
+                    "_CFURLString" = "file:///Applications/yaak.app/";
+                    "_CFURLStringType" = 15;
+                };
+                "file-label" = Yaak;
+                "file-mod-date" = 255296689374032;
+                "file-type" = 41;
+                "is-beta" = 0;
+                "parent-mod-date" = 110410262656076;
+            };
+            "tile-type" = "file-tile";
+        }
+    );
+    "persistent-others" =     (
+    );
+    "recent-apps" =     (
+    );
+    region = US;
+    "show-recents" = 0;
+    tilesize = 57;
+    "trash-full" = 1;
+    version = 1;
+    "wvous-br-corner" = 1;
+    "wvous-br-modifier" = 0;
+}
