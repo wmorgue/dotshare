@@ -1,13 +1,13 @@
 {
     "last-analytics-stamp" =     (
-        "772092844.902377"
+        "772797937.809281"
     );
     lastShowIndicatorTime = "759418601.579231";
     launchanim = 0;
     loc = "en_US:US";
     mineffect = scale;
     "minimize-to-application" = 1;
-    "mod-count" = 204;
+    "mod-count" = 209;
     "persistent-apps" =     (
                 {
             GUID = 328381075;
@@ -20,10 +20,10 @@
                     "_CFURLStringType" = 15;
                 };
                 "file-label" = Firefox;
-                "file-mod-date" = 8366133833053;
+                "file-mod-date" = 46771732769303;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 110410262656076;
+                "parent-mod-date" = 174319376447209;
             };
             "tile-type" = "file-tile";
         },
@@ -46,6 +46,7 @@
             "tile-type" = "file-tile";
         },
                 {
+            GUID = 1974293018;
             "tile-data" =             {
                 book = {length = 564, bytes = 0x626f6f6b 34020000 00000410 30000000 ... 04000000 00000000 };
                 "bundle-identifier" = "com.mitchellh.ghostty";
@@ -59,6 +60,24 @@
                 "file-type" = 41;
                 "is-beta" = 0;
                 "parent-mod-date" = 110410262656076;
+            };
+            "tile-type" = "file-tile";
+        },
+                {
+            GUID = 1974293019;
+            "tile-data" =             {
+                book = {length = 560, bytes = 0x626f6f6b 30020000 00000410 30000000 ... 04000000 00000000 };
+                "bundle-identifier" = "app.yaak.desktop";
+                "dock-extra" = 0;
+                "file-data" =                 {
+                    "_CFURLString" = "file:///Applications/yaak.app/";
+                    "_CFURLStringType" = 15;
+                };
+                "file-label" = Yaak;
+                "file-mod-date" = 255296689374032;
+                "file-type" = 41;
+                "is-beta" = 0;
+                "parent-mod-date" = 174319376447209;
             };
             "tile-type" = "file-tile";
         },
@@ -79,23 +98,6 @@
                 "parent-mod-date" = 3829181962;
             };
             "tile-type" = "file-tile";
-        },
-                {
-            "tile-data" =             {
-                book = {length = 560, bytes = 0x626f6f6b 30020000 00000410 30000000 ... 04000000 00000000 };
-                "bundle-identifier" = "app.yaak.desktop";
-                "dock-extra" = 0;
-                "file-data" =                 {
-                    "_CFURLString" = "file:///Applications/yaak.app/";
-                    "_CFURLStringType" = 15;
-                };
-                "file-label" = Yaak;
-                "file-mod-date" = 255296689374032;
-                "file-type" = 41;
-                "is-beta" = 0;
-                "parent-mod-date" = 110410262656076;
-            };
-            "tile-type" = "file-tile";
         }
     );
     "persistent-others" =     (
@@ -105,7 +107,7 @@
     region = US;
     "show-recents" = 0;
     tilesize = 57;
-    "trash-full" = 1;
+    "trash-full" = 0;
     version = 1;
     "wvous-br-corner" = 1;
     "wvous-br-modifier" = 0;
