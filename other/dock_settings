@@ -1,13 +1,13 @@
 {
     "last-analytics-stamp" =     (
-        "772797937.809281"
+        "773218757.978458"
     );
     lastShowIndicatorTime = "759418601.579231";
     launchanim = 0;
     loc = "en_US:US";
     mineffect = scale;
     "minimize-to-application" = 1;
-    "mod-count" = 209;
+    "mod-count" = 213;
     "persistent-apps" =     (
                 {
             GUID = 328381075;
@@ -59,7 +59,7 @@
                 "file-mod-date" = 54751773792579;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 110410262656076;
+                "parent-mod-date" = 127289484736124;
             };
             "tile-type" = "file-tile";
         },
@@ -77,7 +77,7 @@
                 "file-mod-date" = 255296689374032;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 174319376447209;
+                "parent-mod-date" = 127289484736124;
             };
             "tile-type" = "file-tile";
         },
