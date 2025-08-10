@@ -16,9 +16,11 @@ if ! brew list -1 > ${BREW_DIR}/brew_packages; then
 fi
 
 echo "Looking for config"
-cp -Rf $HOME/.config/* $CONFIG_DIR
 
+cp -Rf $HOME/.config/* $CONFIG_DIR
 cat $HOME/Library/Application\ Support/com.mitchellh.ghostty/config > $CONFIG_DIR/ghostty.config
+
+cp $HOME/.zshrc $CONFIG_DIR/zshrc
 
 echo "Looking for git config"
 cat $HOME/.gitconfig > $CONFIG_DIR/gitconfig

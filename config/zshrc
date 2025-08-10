@@ -1,0 +1,82 @@
+# Brand new config for mac mini M4 
+
+### Export's ###
+
+export EDITOR=nvim
+export TOOLCHAINS=swift
+export LANG=en_US.UTF-8
+export ZSH="$HOME/.oh-my-zsh"
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export HOMEBREW_NO_ENV_HINTS=1
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+export HOMEBREW_DOWNLOAD_CONCURRENCY=auto
+
+### End export's ###
+
+DISABLE_AUTO_UPDATE="true"
+ENABLE_CORRECTION="true"
+COMPLETION_WAITING_DOTS="true"
+
+swift=$HOME/Developer/Swift
+
+plugins=(git zsh-autosuggestions)
+
+source $ZSH/oh-my-zsh.sh
+
+#Alias
+
+alias ls='lsd -1'
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+alias purge='sudo purge'
+alias htop='htop -d 0'
+alias zshrc='$EDITOR ~/.zshrc'
+alias ghosty_config='$EDITOR $HOME/Library/Application\ Support/com.mitchellh.ghostty/config'
+alias pid_name='ps aux | rg -i'
+alias brew_service_logs='ls /opt/homebrew/var/log/'
+alias xcode='open -a /Applications/Xcode.app'
+alias hwinfo='system_profiler SPHardwareDataType'
+alias cpu_name='sysctl -n machdep.cpu.brand_string'
+alias devices='xcrun xctrace list devices'
+alias latest_xcode='http -b https://xcodereleases.com/data.json | jq ".[0].version"'
+alias git_open='open `git remote get-url origin`'
+alias pixel_debug='adb connect 10.10.1.202:43939'
+alias docker_containers='docker ps -a --format "table {{.Names}} (#{{.ID}})\t{{.Status}}\t{{.Ports}}"'
+
+bump() {
+    if ! brew update; then
+        echo "❌ Error updating Homebrew" >&2
+        return 1
+    fi
+
+    local outdated_formulae outdated_casks
+    outdated_formulae=$(brew outdated --quiet)
+    outdated_casks=$(brew outdated --cask --quiet)
+
+    if [[ -z "$outdated_formulae" && -z "$outdated_casks" ]]; then
+        return 0
+    fi
+
+    echo "\nThe following packages can be upgraded:"
+    [[ -n "$outdated_formulae" ]] && echo "🍺 Formulae:\n$outdated_formulae"
+    [[ -n "$outdated_casks" ]] && echo "🪣 Casks:\n$outdated_casks"
+
+    echo
+    if ! read -q "REPLY?Proceed with upgrade? [y/N] "; then
+        echo "\n🚫 Upgrade cancelled"
+        return 0
+    fi
+
+    echo "\nUpgrading packages..."
+    brew upgrade
+    brew upgrade --cask
+    brew autoremove
+    brew cleanup
+    echo "✨ All done!"
+}
+
+eval "$(starship init zsh)"
+

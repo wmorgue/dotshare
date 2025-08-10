@@ -1,13 +1,13 @@
 {
     "last-analytics-stamp" =     (
-        "773218757.978458"
+        "776424013.075148"
     );
     lastShowIndicatorTime = "759418601.579231";
     launchanim = 0;
     loc = "en_US:US";
     mineffect = scale;
     "minimize-to-application" = 1;
-    "mod-count" = 213;
+    "mod-count" = 295;
     "persistent-apps" =     (
                 {
             GUID = 328381075;
@@ -20,10 +20,28 @@
                     "_CFURLStringType" = 15;
                 };
                 "file-label" = Firefox;
-                "file-mod-date" = 46771732769303;
+                "file-mod-date" = 114327276963574;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 174319376447209;
+                "parent-mod-date" = 123836334651256;
+            };
+            "tile-type" = "file-tile";
+        },
+                {
+            GUID = 3219711621;
+            "tile-data" =             {
+                book = {length = 560, bytes = 0x626f6f6b 30020000 00000410 30000000 ... 04000000 00000000 };
+                "bundle-identifier" = "app.yaak.desktop";
+                "dock-extra" = 0;
+                "file-data" =                 {
+                    "_CFURLString" = "file:///Applications/yaak.app/";
+                    "_CFURLStringType" = 15;
+                };
+                "file-label" = Yaak;
+                "file-mod-date" = 28960506868028;
+                "file-type" = 41;
+                "is-beta" = 0;
+                "parent-mod-date" = 123836334651256;
             };
             "tile-type" = "file-tile";
         },
@@ -38,10 +56,10 @@
                     "_CFURLStringType" = 15;
                 };
                 "file-label" = Mail;
-                "file-mod-date" = 3829181962;
+                "file-mod-date" = 3835746812;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 3829181962;
+                "parent-mod-date" = 3835746812;
             };
             "tile-type" = "file-tile";
         },
@@ -59,25 +77,25 @@
                 "file-mod-date" = 54751773792579;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 127289484736124;
+                "parent-mod-date" = 123836334651256;
             };
             "tile-type" = "file-tile";
         },
                 {
-            GUID = 1974293019;
+            GUID = 340859590;
             "tile-data" =             {
-                book = {length = 560, bytes = 0x626f6f6b 30020000 00000410 30000000 ... 04000000 00000000 };
-                "bundle-identifier" = "app.yaak.desktop";
+                book = {length = 564, bytes = 0x626f6f6b 34020000 00000410 30000000 ... 04000000 00000000 };
+                "bundle-identifier" = "com.spotify.client";
                 "dock-extra" = 0;
                 "file-data" =                 {
-                    "_CFURLString" = "file:///Applications/yaak.app/";
+                    "_CFURLString" = "file:///Applications/Spotify.app/";
                     "_CFURLStringType" = 15;
                 };
-                "file-label" = Yaak;
-                "file-mod-date" = 255296689374032;
+                "file-label" = Spotify;
+                "file-mod-date" = 49421730410942;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 127289484736124;
+                "parent-mod-date" = 123836334651256;
             };
             "tile-type" = "file-tile";
         },
@@ -92,10 +110,10 @@
                     "_CFURLStringType" = 15;
                 };
                 "file-label" = "System Settings";
-                "file-mod-date" = 3829181962;
+                "file-mod-date" = 3835746812;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 3829181962;
+                "parent-mod-date" = 3835746812;
             };
             "tile-type" = "file-tile";
         }
@@ -106,8 +124,8 @@
     );
     region = US;
     "show-recents" = 0;
-    tilesize = 57;
-    "trash-full" = 0;
+    tilesize = 59;
+    "trash-full" = 1;
     version = 1;
     "wvous-br-corner" = 1;
     "wvous-br-modifier" = 0;
