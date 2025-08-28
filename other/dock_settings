@@ -1,13 +1,13 @@
 {
     "last-analytics-stamp" =     (
-        "776424013.075148"
+        "777885720.914996"
     );
     lastShowIndicatorTime = "759418601.579231";
     launchanim = 0;
     loc = "en_US:US";
     mineffect = scale;
     "minimize-to-application" = 1;
-    "mod-count" = 295;
+    "mod-count" = 356;
     "persistent-apps" =     (
                 {
             GUID = 328381075;
@@ -20,10 +20,10 @@
                     "_CFURLStringType" = 15;
                 };
                 "file-label" = Firefox;
-                "file-mod-date" = 114327276963574;
+                "file-mod-date" = 121444038768508;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 123836334651256;
+                "parent-mod-date" = 126636654556437;
             };
             "tile-type" = "file-tile";
         },
@@ -41,7 +41,7 @@
                 "file-mod-date" = 28960506868028;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 123836334651256;
+                "parent-mod-date" = 126636654556437;
             };
             "tile-type" = "file-tile";
         },
@@ -77,7 +77,7 @@
                 "file-mod-date" = 54751773792579;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 123836334651256;
+                "parent-mod-date" = 213583972946824;
             };
             "tile-type" = "file-tile";
         },
@@ -92,10 +92,10 @@
                     "_CFURLStringType" = 15;
                 };
                 "file-label" = Spotify;
-                "file-mod-date" = 49421730410942;
+                "file-mod-date" = 234083850530403;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 123836334651256;
+                "parent-mod-date" = 126636654556437;
             };
             "tile-type" = "file-tile";
         },
@@ -116,6 +116,24 @@
                 "parent-mod-date" = 3835746812;
             };
             "tile-type" = "file-tile";
+        },
+                {
+            GUID = 1497606281;
+            "tile-data" =             {
+                book = {length = 576, bytes = 0x626f6f6b 40020000 00000410 30000000 ... 04000000 00000000 };
+                "bundle-identifier" = "com.microsoft.VSCode";
+                "dock-extra" = 0;
+                "file-data" =                 {
+                    "_CFURLString" = "file:///Applications/Visual%20Studio%20Code.app/";
+                    "_CFURLStringType" = 15;
+                };
+                "file-label" = "Visual Studio Code";
+                "file-mod-date" = 3836292074;
+                "file-type" = 41;
+                "is-beta" = 0;
+                "parent-mod-date" = 213583972946824;
+            };
+            "tile-type" = "file-tile";
         }
     );
     "persistent-others" =     (
@@ -124,8 +142,8 @@
     );
     region = US;
     "show-recents" = 0;
-    tilesize = 59;
-    "trash-full" = 1;
+    tilesize = 60;
+    "trash-full" = 0;
     version = 1;
     "wvous-br-corner" = 1;
     "wvous-br-modifier" = 0;
