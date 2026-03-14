@@ -1,18 +1,18 @@
 {
     "last-analytics-stamp" =     (
-        "777885720.914996"
+        "794728978.961328"
     );
     lastShowIndicatorTime = "759418601.579231";
     launchanim = 0;
     loc = "en_US:US";
     mineffect = scale;
     "minimize-to-application" = 1;
-    "mod-count" = 356;
+    "mod-count" = 1065;
     "persistent-apps" =     (
                 {
             GUID = 328381075;
             "tile-data" =             {
-                book = {length = 564, bytes = 0x626f6f6b 34020000 00000410 30000000 ... 04000000 00000000 };
+                book = {length = 580, bytes = 0x626f6f6b 44020000 00000510 40000000 ... 04000000 00000000 };
                 "bundle-identifier" = "org.mozilla.firefox";
                 "dock-extra" = 0;
                 "file-data" =                 {
@@ -20,17 +20,17 @@
                     "_CFURLStringType" = 15;
                 };
                 "file-label" = Firefox;
-                "file-mod-date" = 121444038768508;
+                "file-mod-date" = 34290578854554;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 126636654556437;
+                "parent-mod-date" = 157075104950239;
             };
             "tile-type" = "file-tile";
         },
                 {
             GUID = 3219711621;
             "tile-data" =             {
-                book = {length = 560, bytes = 0x626f6f6b 30020000 00000410 30000000 ... 04000000 00000000 };
+                book = {length = 576, bytes = 0x626f6f6b 40020000 00000510 40000000 ... 04000000 00000000 };
                 "bundle-identifier" = "app.yaak.desktop";
                 "dock-extra" = 0;
                 "file-data" =                 {
@@ -38,17 +38,17 @@
                     "_CFURLStringType" = 15;
                 };
                 "file-label" = Yaak;
-                "file-mod-date" = 28960506868028;
+                "file-mod-date" = 276767244053644;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 126636654556437;
+                "parent-mod-date" = 252479213682522;
             };
             "tile-type" = "file-tile";
         },
                 {
             GUID = 1023669875;
             "tile-data" =             {
-                book = {length = 584, bytes = 0x626f6f6b 48020000 00000410 30000000 ... 04000000 00000000 };
+                book = {length = 600, bytes = 0x626f6f6b 58020000 00000510 40000000 ... 04000000 00000000 };
                 "bundle-identifier" = "com.apple.mail";
                 "dock-extra" = 0;
                 "file-data" =                 {
@@ -56,17 +56,17 @@
                     "_CFURLStringType" = 15;
                 };
                 "file-label" = Mail;
-                "file-mod-date" = 3835746812;
+                "file-mod-date" = 3852770582;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 3835746812;
+                "parent-mod-date" = 3852770582;
             };
             "tile-type" = "file-tile";
         },
                 {
             GUID = 1974293018;
             "tile-data" =             {
-                book = {length = 564, bytes = 0x626f6f6b 34020000 00000410 30000000 ... 04000000 00000000 };
+                book = {length = 580, bytes = 0x626f6f6b 44020000 00000510 40000000 ... 04000000 00000000 };
                 "bundle-identifier" = "com.mitchellh.ghostty";
                 "dock-extra" = 0;
                 "file-data" =                 {
@@ -77,14 +77,14 @@
                 "file-mod-date" = 54751773792579;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 213583972946824;
+                "parent-mod-date" = 252479213682522;
             };
             "tile-type" = "file-tile";
         },
                 {
-            GUID = 340859590;
+            GUID = 3577536197;
             "tile-data" =             {
-                book = {length = 564, bytes = 0x626f6f6b 34020000 00000410 30000000 ... 04000000 00000000 };
+                book = {length = 580, bytes = 0x626f6f6b 44020000 00000510 40000000 ... 04000000 00000000 };
                 "bundle-identifier" = "com.spotify.client";
                 "dock-extra" = 0;
                 "file-data" =                 {
@@ -92,17 +92,17 @@
                     "_CFURLStringType" = 15;
                 };
                 "file-label" = Spotify;
-                "file-mod-date" = 234083850530403;
+                "file-mod-date" = 871437319994;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 126636654556437;
+                "parent-mod-date" = 252479213682522;
             };
             "tile-type" = "file-tile";
         },
                 {
             GUID = 1023669891;
             "tile-data" =             {
-                book = {length = 596, bytes = 0x626f6f6b 54020000 00000410 30000000 ... 04000000 00000000 };
+                book = {length = 612, bytes = 0x626f6f6b 64020000 00000510 40000000 ... 04000000 00000000 };
                 "bundle-identifier" = "com.apple.systempreferences";
                 "dock-extra" = 1;
                 "file-data" =                 {
@@ -110,17 +110,17 @@
                     "_CFURLStringType" = 15;
                 };
                 "file-label" = "System Settings";
-                "file-mod-date" = 3835746812;
+                "file-mod-date" = 3852770582;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 3835746812;
+                "parent-mod-date" = 3852770582;
             };
             "tile-type" = "file-tile";
         },
                 {
-            GUID = 1497606281;
+            GUID = 1586353893;
             "tile-data" =             {
-                book = {length = 576, bytes = 0x626f6f6b 40020000 00000410 30000000 ... 04000000 00000000 };
+                book = {length = 592, bytes = 0x626f6f6b 50020000 00000510 40000000 ... 04000000 00000000 };
                 "bundle-identifier" = "com.microsoft.VSCode";
                 "dock-extra" = 0;
                 "file-data" =                 {
@@ -128,10 +128,28 @@
                     "_CFURLStringType" = 15;
                 };
                 "file-label" = "Visual Studio Code";
-                "file-mod-date" = 3836292074;
+                "file-mod-date" = 29566113813748;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 213583972946824;
+                "parent-mod-date" = 252479213682522;
+            };
+            "tile-type" = "file-tile";
+        },
+                {
+            GUID = 3577536198;
+            "tile-data" =             {
+                book = {length = 588, bytes = 0x626f6f6b 4c020000 00000510 40000000 ... 04000000 00000000 };
+                "bundle-identifier" = "com.tdesktop.Telegram";
+                "dock-extra" = 0;
+                "file-data" =                 {
+                    "_CFURLString" = "file:///Applications/Telegram%20Desktop.app/";
+                    "_CFURLStringType" = 15;
+                };
+                "file-label" = "Telegram Desktop";
+                "file-mod-date" = 238408899265917;
+                "file-type" = 41;
+                "is-beta" = 0;
+                "parent-mod-date" = 252479213682522;
             };
             "tile-type" = "file-tile";
         }
@@ -142,7 +160,7 @@
     );
     region = US;
     "show-recents" = 0;
-    tilesize = 60;
+    tilesize = 78;
     "trash-full" = 0;
     version = 1;
     "wvous-br-corner" = 1;
