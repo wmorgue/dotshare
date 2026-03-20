@@ -1,3 +1,6 @@
 .DS_Store
 SearchCoreService*
+config/raycast/
+config/simplex/
+config/v2raya/
 

@@ -1,0 +1,73 @@
+# Mole Cleanup Preview - 2026-02-16 23:41:34
+#
+# How to protect files:
+# 1. Copy any path below to ~/.config/mole/whitelist
+# 2. Run: mo clean --whitelist
+#
+# Example:
+#   /Users/*/Library/Caches/com.example.app
+#
+
+
+=== User essentials ===
+/Users/maybequantum/Library/Caches  # 617.2MB, 26 items
+/Users/maybequantum/Library/Logs  # 1.0MB, 8 items
+
+=== Finder metadata ===
+
+=== macOS system caches ===
+/Users/maybequantum/Library/Autosave Information/Unsaved Xcode Document.xcworkspace  # 16KB
+/Users/maybequantum/Library/Suggestions  # 7.3MB, 17 items
+
+=== Sandboxed app caches ===
+
+=== Browsers ===
+/Users/maybequantum/Library/Caches/com.apple.Safari/WebKitCache  # 4KB
+/Users/maybequantum/Library/Caches/Firefox/Profiles  # 1.04GB
+
+=== Cloud storage ===
+
+=== Office applications ===
+
+=== Developer tools ===
+/Users/maybequantum/.oh-my-zsh/cache/grep-alias  # 1KB
+/Users/maybequantum/Library/Caches/SentryCrash  # 8KB, 2 items
+/Users/maybequantum/Library/Application Support/Antigravity/Cache  # 408KB, 2 items
+/Users/maybequantum/Library/Application Support/Antigravity/Code Cache  # 16KB, 2 items
+/Users/maybequantum/Library/Application Support/Antigravity/GPUCache  # 5.5MB, 5 items
+/Users/maybequantum/Library/Application Support/Antigravity/DawnGraphiteCache  # 545KB, 5 items
+/Users/maybequantum/Library/Application Support/Antigravity/DawnWebGPUCache  # 545KB, 5 items
+/Users/maybequantum/Library/Application Support/Code/CachedData  # 45.1MB, 4 items
+/Users/maybequantum/Library/Application Support/Code/DawnGraphiteCache  # 545KB, 5 items
+/Users/maybequantum/Library/Application Support/Code/DawnWebGPUCache  # 545KB, 5 items
+/Users/maybequantum/Library/Application Support/Code/GPUCache  # 1.5MB, 5 items
+/Users/maybequantum/Library/Application Support/Code/CachedExtensionVSIXs  # 111.1MB, 3 items
+/Users/maybequantum/Library/Caches/Homebrew  # 366.1MB, 56 items
+
+=== Development applications ===
+/Users/maybequantum/Library/Application Support/Code/logs  # 1.2MB, 10 items
+/Users/maybequantum/Library/Application Support/Code/Cache  # 67.8MB, 2 items
+/Users/maybequantum/Library/Application Support/Code/CachedData  # 45.1MB, 4 items
+/Users/maybequantum  # 164KB, 2 items
+/Users/maybequantum/.lesshst  # 1KB
+
+=== Virtual machine tools ===
+
+=== Application Support ===
+
+=== Uninstalled app data ===
+
+=== Apple Silicon updates ===
+
+=== iOS device backups ===
+
+=== Time Machine incomplete backups ===
+
+=== Large files to review ===
+
+# ============================================
+# Summary
+# ============================================
+# Potential cleanup: 2.43GB
+# Items: 190
+# Categories: 25

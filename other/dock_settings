@@ -1,13 +1,13 @@
 {
     "last-analytics-stamp" =     (
-        "794728978.961328"
+        "795624222.94769"
     );
     lastShowIndicatorTime = "759418601.579231";
     launchanim = 0;
     loc = "en_US:US";
     mineffect = scale;
     "minimize-to-application" = 1;
-    "mod-count" = 1065;
+    "mod-count" = 1078;
     "persistent-apps" =     (
                 {
             GUID = 328381075;
@@ -20,10 +20,10 @@
                     "_CFURLStringType" = 15;
                 };
                 "file-label" = Firefox;
-                "file-mod-date" = 34290578854554;
+                "file-mod-date" = 76230935649487;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 157075104950239;
+                "parent-mod-date" = 51599298794886;
             };
             "tile-type" = "file-tile";
         },
@@ -41,7 +41,7 @@
                 "file-mod-date" = 276767244053644;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 252479213682522;
+                "parent-mod-date" = 51599298794886;
             };
             "tile-type" = "file-tile";
         },
@@ -77,7 +77,7 @@
                 "file-mod-date" = 54751773792579;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 252479213682522;
+                "parent-mod-date" = 249635945973669;
             };
             "tile-type" = "file-tile";
         },
@@ -131,7 +131,7 @@
                 "file-mod-date" = 29566113813748;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 252479213682522;
+                "parent-mod-date" = 51599298794886;
             };
             "tile-type" = "file-tile";
         },
@@ -149,7 +149,7 @@
                 "file-mod-date" = 238408899265917;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 252479213682522;
+                "parent-mod-date" = 249635945973669;
             };
             "tile-type" = "file-tile";
         }

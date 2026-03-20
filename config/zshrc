@@ -28,7 +28,7 @@ plugins=(git zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 
 #Alias
-alias local-qwen='llama-server -hf unsloth/Qwen3.5-9B-GGUF:UD-Q4_K_XL --alias "Qwen3.5-9B" -c 16384 --temp 0.6 --top-p 0.95 --top-k 20 --min-p 0.00'
+alias local-qwen='llama-server -hf unsloth/Qwen3.5-9B-GGUF:UD-Q4_K_XL --alias "Qwen3.5-9B" -c 16384 --temp 0.6 --top-p 0.95 --top-k 20 --min-p 0.00 --chat-template chatml'
 alias ls='lsd -1'
 alias rm='rm -i'
 alias cp='cp -i'
@@ -90,8 +90,4 @@ eval "$(starship init zsh)"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/maybequantum/.lmstudio/bin"
-# End of LM Studio CLI section
 
