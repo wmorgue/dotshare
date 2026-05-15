@@ -1,13 +1,13 @@
 {
     "last-analytics-stamp" =     (
-        "795624222.94769"
+        "800538707.133287"
     );
     lastShowIndicatorTime = "759418601.579231";
     launchanim = 0;
     loc = "en_US:US";
     mineffect = scale;
     "minimize-to-application" = 1;
-    "mod-count" = 1078;
+    "mod-count" = 1237;
     "persistent-apps" =     (
                 {
             GUID = 328381075;
@@ -20,10 +20,10 @@
                     "_CFURLStringType" = 15;
                 };
                 "file-label" = Firefox;
-                "file-mod-date" = 76230935649487;
+                "file-mod-date" = 147673427102192;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 51599298794886;
+                "parent-mod-date" = 41029388786801;
             };
             "tile-type" = "file-tile";
         },
@@ -38,10 +38,10 @@
                     "_CFURLStringType" = 15;
                 };
                 "file-label" = Yaak;
-                "file-mod-date" = 276767244053644;
+                "file-mod-date" = 161709377206322;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 51599298794886;
+                "parent-mod-date" = 41029388786801;
             };
             "tile-type" = "file-tile";
         },
@@ -68,16 +68,16 @@
             "tile-data" =             {
                 book = {length = 580, bytes = 0x626f6f6b 44020000 00000510 40000000 ... 04000000 00000000 };
                 "bundle-identifier" = "com.mitchellh.ghostty";
-                "dock-extra" = 0;
+                "dock-extra" = 1;
                 "file-data" =                 {
                     "_CFURLString" = "file:///Applications/Ghostty.app/";
                     "_CFURLStringType" = 15;
                 };
                 "file-label" = Ghostty;
-                "file-mod-date" = 54751773792579;
+                "file-mod-date" = 277802343312574;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 249635945973669;
+                "parent-mod-date" = 41029388786801;
             };
             "tile-type" = "file-tile";
         },
@@ -92,10 +92,10 @@
                     "_CFURLStringType" = 15;
                 };
                 "file-label" = Spotify;
-                "file-mod-date" = 871437319994;
+                "file-mod-date" = 248454834337784;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 252479213682522;
+                "parent-mod-date" = 150125853591362;
             };
             "tile-type" = "file-tile";
         },
@@ -128,10 +128,10 @@
                     "_CFURLStringType" = 15;
                 };
                 "file-label" = "Visual Studio Code";
-                "file-mod-date" = 29566113813748;
+                "file-mod-date" = 110285733771364;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 51599298794886;
+                "parent-mod-date" = 41029388786801;
             };
             "tile-type" = "file-tile";
         },
@@ -146,10 +146,10 @@
                     "_CFURLStringType" = 15;
                 };
                 "file-label" = "Telegram Desktop";
-                "file-mod-date" = 238408899265917;
+                "file-mod-date" = 208022009558406;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 249635945973669;
+                "parent-mod-date" = 150125853591362;
             };
             "tile-type" = "file-tile";
         }
@@ -161,7 +161,7 @@
     region = US;
     "show-recents" = 0;
     tilesize = 78;
-    "trash-full" = 0;
+    "trash-full" = 1;
     version = 1;
     "wvous-br-corner" = 1;
     "wvous-br-modifier" = 0;

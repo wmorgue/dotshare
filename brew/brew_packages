@@ -2,6 +2,7 @@ age
 aria2
 bat
 beszel-agent
+c-ares
 ca-certificates
 certifi
 dua-cli
@@ -21,6 +22,7 @@ libssh2
 libunistring
 libuv
 llama.cpp
+llhttp
 lpeg
 lsd
 lua
@@ -30,6 +32,7 @@ lz4
 macmon
 mole
 mpdecimal
+mutagen
 ncurses
 neovim
 nmap
@@ -45,7 +48,7 @@ sqlite
 sshuttle
 starship
 tree
-tree-sitter@0.25
+tree-sitter
 unibilium
 unxip
 utf8proc
@@ -68,6 +71,8 @@ localsend
 mitmproxy
 mos
 obsidian
+onlyoffice
+raspberry-pi-imager
 raycast
 simplex
 spotify
