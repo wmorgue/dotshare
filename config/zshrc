@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export HOMEBREW_NO_ENV_HINTS=1
 export PATH="/opt/homebrew/bin:$PATH"
-export PATH="$HOME/.composer/vendor/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 export HOMEBREW_DOWNLOAD_CONCURRENCY=auto
 
 export LANG=en_US.UTF-8
@@ -28,7 +28,6 @@ plugins=(git zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 
 #Alias
-alias local-qwen='llama-server -m ~/models/qwen/Qwen3.5-9B-UD-Q4_K_XL.gguf --alias "Qwen3.5-9B" -c 32768 --temp 0.6 --top-p 0.95 --top-k 20 --min-p 0.00'
 alias ls='lsd -1'
 alias rm='rm -i'
 alias cp='cp -i'
@@ -83,7 +82,6 @@ bump() {
 
 eval "$(starship init zsh)"
 
-
 # bun completions
 [ -s "/Users/maybequantum/.bun/_bun" ] && source "/Users/maybequantum/.bun/_bun"
 
@@ -91,3 +89,4 @@ eval "$(starship init zsh)"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+. "$HOME/.local/bin/env"

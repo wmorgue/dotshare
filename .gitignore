@@ -1,6 +1,9 @@
 .DS_Store
 SearchCoreService*
+config/fish/
 config/raycast/
 config/simplex/
+config/uv/
 config/v2raya/
+config/mole/
 

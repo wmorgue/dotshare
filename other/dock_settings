@@ -1,13 +1,13 @@
 {
     "last-analytics-stamp" =     (
-        "800538707.133287"
+        "806686052.8038321"
     );
     lastShowIndicatorTime = "759418601.579231";
     launchanim = 0;
     loc = "en_US:US";
     mineffect = scale;
     "minimize-to-application" = 1;
-    "mod-count" = 1237;
+    "mod-count" = 1456;
     "persistent-apps" =     (
                 {
             GUID = 328381075;
@@ -20,10 +20,10 @@
                     "_CFURLStringType" = 15;
                 };
                 "file-label" = Firefox;
-                "file-mod-date" = 147673427102192;
+                "file-mod-date" = 200162228567776;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 41029388786801;
+                "parent-mod-date" = 210023473570706;
             };
             "tile-type" = "file-tile";
         },
@@ -38,10 +38,10 @@
                     "_CFURLStringType" = 15;
                 };
                 "file-label" = Yaak;
-                "file-mod-date" = 161709377206322;
+                "file-mod-date" = 241733217208256;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 41029388786801;
+                "parent-mod-date" = 210023473570706;
             };
             "tile-type" = "file-tile";
         },
@@ -56,10 +56,10 @@
                     "_CFURLStringType" = 15;
                 };
                 "file-label" = Mail;
-                "file-mod-date" = 3852770582;
+                "file-mod-date" = 3862199779;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 3852770582;
+                "parent-mod-date" = 3862199779;
             };
             "tile-type" = "file-tile";
         },
@@ -77,7 +77,7 @@
                 "file-mod-date" = 277802343312574;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 41029388786801;
+                "parent-mod-date" = 210023473570706;
             };
             "tile-type" = "file-tile";
         },
@@ -92,10 +92,10 @@
                     "_CFURLStringType" = 15;
                 };
                 "file-label" = Spotify;
-                "file-mod-date" = 248454834337784;
+                "file-mod-date" = 96911214525397;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 150125853591362;
+                "parent-mod-date" = 210023473570706;
             };
             "tile-type" = "file-tile";
         },
@@ -110,17 +110,17 @@
                     "_CFURLStringType" = 15;
                 };
                 "file-label" = "System Settings";
-                "file-mod-date" = 3852770582;
+                "file-mod-date" = 3862199779;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 3852770582;
+                "parent-mod-date" = 3862199779;
             };
             "tile-type" = "file-tile";
         },
                 {
             GUID = 1586353893;
             "tile-data" =             {
-                book = {length = 592, bytes = 0x626f6f6b 50020000 00000510 40000000 ... 04000000 00000000 };
+                book = {length = 660, bytes = 0x626f6f6b 94020000 00000510 40000000 ... 58010000 00000000 };
                 "bundle-identifier" = "com.microsoft.VSCode";
                 "dock-extra" = 0;
                 "file-data" =                 {
@@ -128,10 +128,10 @@
                     "_CFURLStringType" = 15;
                 };
                 "file-label" = "Visual Studio Code";
-                "file-mod-date" = 110285733771364;
+                "file-mod-date" = 209009860950973;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 41029388786801;
+                "parent-mod-date" = 47317227299423;
             };
             "tile-type" = "file-tile";
         },
@@ -146,10 +146,10 @@
                     "_CFURLStringType" = 15;
                 };
                 "file-label" = "Telegram Desktop";
-                "file-mod-date" = 208022009558406;
+                "file-mod-date" = 182789086037963;
                 "file-type" = 41;
                 "is-beta" = 0;
-                "parent-mod-date" = 150125853591362;
+                "parent-mod-date" = 210023473570706;
             };
             "tile-type" = "file-tile";
         }
@@ -160,8 +160,8 @@
     );
     region = US;
     "show-recents" = 0;
-    tilesize = 78;
-    "trash-full" = 1;
+    tilesize = 75;
+    "trash-full" = 0;
     version = 1;
     "wvous-br-corner" = 1;
     "wvous-br-modifier" = 0;
